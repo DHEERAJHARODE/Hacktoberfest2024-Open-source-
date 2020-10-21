@@ -1,0 +1,13 @@
+r= int(input("give me the number"))
+if r>1:
+    for i in range(2,r):
+       if r%i==0:
+         print(r,"is not a prime number")
+         print(i,"time",r//i,"is",r)
+         break
+    else:
+        print(r, "is a prime number")
+    
+else:
+    print(r, "is negative integer")
+print("Now enjoy hacktoberfest")
