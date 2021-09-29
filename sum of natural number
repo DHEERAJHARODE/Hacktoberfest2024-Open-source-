@@ -3,13 +3,9 @@ int main() {
     int n, i, sum = 0;
     printf("Enter a positive integer: ");
     scanf("%d", &n);
-    i = 1;
+    
+    int sum_count = (n*(n+1))/2;
+    printf("Sum1 = %d", sum_count);
 
-    while (i <= n) {
-        sum += i;
-        ++i;
-    }
-
-    printf("Sum = %d", sum);
     return 0;
 }
