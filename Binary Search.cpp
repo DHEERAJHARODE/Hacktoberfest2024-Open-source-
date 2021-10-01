@@ -1,4 +1,5 @@
 #include<bits/stdc++.h>
+using namespace std;
 int binarySearch(int arr[],int size,int target){
    int low=0;
   int high=size-1;
