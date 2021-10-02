@@ -1,0 +1,35 @@
+
+#include <iostream>
+#include<cstring>
+using namespace std;
+void stringCompression(char str[]){
+    int n = strlen(str);
+    int k = 0;
+    int i = 0;
+    while(i < n){
+        int count = 1;
+        int j = i+1;
+        char ch = str[i];
+        while (j < n && ch == str[j]){
+            count++;
+            j++;
+        }
+        str[k] = ch;
+        k++;
+        if(count > 1){
+            str[k] = count + 48;
+            k++;
+        }
+        i = j;
+    }
+    str[k] = '\0';
+}
+int main() {
+      char str[100];
+      cout<<"Enter the string :";
+      cin>>str;
+      stringCompression(str);
+      cout<<"The Compressed string is:"<<str;
+
+    return 0;
+}
