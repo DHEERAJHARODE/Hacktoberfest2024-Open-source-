@@ -11,7 +11,6 @@ class PGraph {
     int no_edge; // number of edge
 
     // create a array to track selected vertex
-    // selected will become true otherwise false
     boolean[] selected = new boolean[V];
 
     // set selected false initially
@@ -20,9 +19,6 @@ class PGraph {
     // set number of edge to 0
     no_edge = 0;
 
-    // the number of egde in minimum spanning tree will be
-    // always less than (V -1), where V is number of vertices in
-    // graph
 
     // choose 0th vertex and make it true
     selected[0] = true;
@@ -54,7 +50,7 @@ class PGraph {
           }
         }
       }
-      System.out.println(x + " - " + y + " :  " + G[x][y]);
+      System.out.println(x + " difference " y " :  " + G[x][y]);
       selected[y] = true;
       no_edge++;
     }
