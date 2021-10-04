@@ -2,40 +2,49 @@
 
 #include<stdio.h>
 #include<stdlib.h>
-void bubblesort(int a[],int size);
-void main()
-{
-  int a[50],n,i;
-  printf("\n Enter the size of the array");
-  scanf("%d",&n);
-  if(n>50)
-  {
-    printf("\n error");
-    exit(0);
-  }
 
- printf("\n Enter the array elements: \n");
-
- for(i=0;i<n;i++)
-  scanf("%d",&a[i]);
-  bubblesort(a,n);
-  printf("\n The sorted array is\n");
-  for(i=0;i<n;i++)
-  printf("%d\t",a[i]);
-}
-void bubblesort(int a[],int size)
+void bubblesort (long a[],long size)
 {
-  int temp,i,j;
-  for(i=0;i<size;i++)
-  {
-   for(j=0;j<size-1;j++)
-   {
-    if(a[j]>a[j+1])
+  int temp, i, j;
+  for (i = 0; i < (size-1); i++)
     {
-     temp=a[j];
-     a[j]=a[j+1];
-     a[j+1]=temp;
+      int swapped = 0;//flag variable
+      for (j = 0; j < (size-i-1); j++)
+	{
+	  if (a[j] > a[j + 1])
+	    {
+	       // swapping
+	      swapped = 1;
+	      temp = a[j];
+	      a[j] = a[j + 1];
+	      a[j + 1] = temp;
+	    }
+	}
+      if (swapped == 0)//if no swapping in the previous iteration i.e. sorting done
+	break;
     }
-  }
- }
+}
+
+
+void main ()
+{
+  long int n, i;
+
+  printf ("\n Enter the size of the array: ");
+  scanf ("%ld", &n);
+
+  long a[n];
+
+  printf ("\n Enter the array elements: \n");
+
+//   fetch input
+  for (i = 0; i < n; i++)
+    scanf ("%ld", &a[i]);
+    
+  bubblesort (a, n);
+  
+//   print the output
+  printf ("\n The sorted array is\n");
+  for (i = 0; i < n; i++)
+    printf ("%ld ", a[i]);
 }
