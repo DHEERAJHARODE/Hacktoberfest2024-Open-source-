@@ -1,33 +1,49 @@
-#include<bits/stdc++.h>
-using namespace std;
-int binarySearch(int arr[],int size,int target){
-   int low=0;
-  int high=size-1;
-  while(low<=high){
-    int mid=low+(high-low)/2;
-    if(arr[mid]==target){
-      return mid;
-      }
-    else if(arr[mid]>target){
-      high=mid-1;
-      }
-    else{
-      low=mid+1;
-      }
-    }
-  return -1;
-  }
-int main(){
-   int size;
-   cin>>size;
-   int arr[size];
-  for(int i=0;i<size;i++){
-    cin>>arr[i];
-    }
-  int target;
-  cin>>target;
-  sort(arr,arr+n);
-  int ans = binarySearch(arr,size,target);
-  cout<<"Element found at index "<<ans<<endl;
-   return 0;
-  }
+#include<stdio.h>    
+#include<stdlib.h>  
+int main(){  
+int a[10][10],b[10][10],mul[10][10],r,c,i,j,k;    
+system("cls");  
+printf("enter the number of row=");    
+scanf("%d",&r);    
+printf("enter the number of column=");    
+scanf("%d",&c);    
+printf("enter the first matrix element=\n");    
+for(i=0;i<r;i++)    
+{    
+for(j=0;j<c;j++)    
+{    
+scanf("%d",&a[i][j]);    
+}    
+}    
+printf("enter the second matrix element=\n");    
+for(i=0;i<r;i++)    
+{    
+for(j=0;j<c;j++)    
+{    
+scanf("%d",&b[i][j]);    
+}    
+}    
+    
+printf("multiply of the matrix=\n");    
+for(i=0;i<r;i++)    
+{    
+for(j=0;j<c;j++)    
+{    
+mul[i][j]=0;    
+for(k=0;k<c;k++)    
+{    
+mul[i][j]+=a[i][k]*b[k][j];    
+}    
+}    
+}    
+//for printing result    
+for(i=0;i<r;i++)    
+{    
+for(j=0;j<c;j++)    
+{    
+printf("%d\t",mul[i][j]);    
+}    
+printf("\n");    
+}    
+return 0;  
+}
