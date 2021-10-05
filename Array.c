@@ -3,17 +3,31 @@
 #include <conio.h>
 
 int main(){
-    int arr[10],minValue,maxValue=0;
-    printf("Enter ten numbers :\n");
-    for(int i=0;i<10;i++){
+    int arr[100],minValue,maxValue,size;
+
+    //input the size of the array
+    printf("Enter the size of the Array :\n");
+    scanf("%d",&size);
+
+    //input the elements of the array
+    printf("Enter the elements(numbers) of the Array : \n");
+    for(int i=0;i<size;i++)
+    {
         scanf("%d" , &arr[i]);
-        if(arr[i]>maxValue){
+    }
+
+    minValue=maxValue=arr[0];
+
+    //for finding the max. and min. values
+    for(int i=1;i<size;i++)
+    {
+        if(arr[i]>maxValue)
+        {
             maxValue=arr[i];
         }
-    }
-    minValue=maxValue;
-    for(int i=0;i<10;i++){
-        if(arr[i]<minValue){
+
+        if(arr[i]<minValue)
+        {
             minValue=arr[i];
         }
     }
