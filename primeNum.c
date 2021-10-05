@@ -1,25 +1,48 @@
-#include<stdio.h>
+#include <stdio.h>
+int main()
 
-int main(){
-    int n, count = 0;
-    scanf("%d", &n);
+{
 
-    
-    for(int i=2; i<n/2; i++){
-        if(n%i == 0){
-            count = 1;
-            break;
-        }
-    }
+int n, i, flag = 0;
 
-    if(n==1){
-        printf("This is neither a prime nor composite");
-    }
-    else if(count ==0) {
-        printf("This is a prime number");
-    }
-    else
-        printf("This is not a prime number");
+printf("Enter a positive integer: ");
 
-    return 0;
+scanf("%d", &n);
+
+for (i = 2; i <= n / 2; ++i)
+
+{
+
+if (n % i == 0)
+
+{
+
+flag = 1;
+
+break;
+
+}
+
+}
+
+if (n == 1) {
+
+printf("1 is neither prime nor composite.");
+
+}
+
+else {
+
+if (flag == 0)
+
+printf("%d is a prime number.", n);
+
+else
+
+printf("%d is not a prime number.", n);
+
+}
+
+return 0;
+
 }
