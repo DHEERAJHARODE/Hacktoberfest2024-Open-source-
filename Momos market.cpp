@@ -41,13 +41,13 @@ pair<int, int> go(vector<int> sum, int q){
 	{
 		int momos = 0;
 		int money_left = q;
-		return make_pair(momos, money_left);	
+		return {momos, money_left};	
 	}
 	
 
 	int momos = pos+1;
 	int money_left = q-sum.at(pos);
-	return make_pair(momos, money_left);
+	return {momos, money_left};
 
 }
 
@@ -78,7 +78,7 @@ int main( int argc , char ** argv )
 	int total_money;
 	cin>>total_money;
 	
-	pair<int, int> ans = make_pair(0,0);
+	pair<int, int> ans = {0,0};
 	ans = go(sum, total_money);
 
 	cout << ans.first<<" "<< ans.second << '\n';
