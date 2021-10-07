@@ -3,35 +3,35 @@
 #include <conio.h>
 
 int main(){
-    int arr[100],minValue,maxValue,size;
+    int arr[100],min,max,size;
 
     //input the size of the array
-    printf("Enter the size of the Array :\n");
+    printf("Enter the size of the Array : ");
     scanf("%d",&size);
 
     //input the elements of the array
-    printf("Enter the elements(numbers) of the Array : \n");
+    printf("Enter the elements(numbers) of the Array : ");
     for(int i=0;i<size;i++)
     {
         scanf("%d" , &arr[i]);
     }
 
-    minValue=maxValue=arr[0];
+    min=max=arr[0];
 
     //for finding the max. and min. values
     for(int i=1;i<size;i++)
     {
-        if(arr[i]>maxValue)
+        if(arr[i]>max)
         {
-            maxValue=arr[i];
+            max=arr[i];
         }
 
-        if(arr[i]<minValue)
+        if(arr[i]<min)
         {
-            minValue=arr[i];
+            min=arr[i];
         }
     }
-    printf("Minimum Value = %d\n" , minValue);
-    printf("Maximum Value = %d\n" , maxValue);
+    printf("Minimum Value = %d\n" , min);
+    printf("Maximum Value = %d\n" , max);
     getch();
 }
