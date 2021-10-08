@@ -63,7 +63,7 @@ void cycleSort(int arr[], int n)
 
 // Main
 void main(){
-    printf("\n\Cycle Sort Algorithm");
+    printf("\nCycle Sort Algorithm");
     int arr[] = {275,128,28,249,433,91,288,12,29,179,248,479,487,42,153,191,132,323,205,3};
     int size = sizeof(arr)/sizeof(arr[0]);
     printf("\nSize of Array = %d\n",size);
