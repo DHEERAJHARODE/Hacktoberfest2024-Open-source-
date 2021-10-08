@@ -1,6 +1,10 @@
 #include "stdio.h"
 #include "stdlib.h"
 
+
+// Heap Sort Algorithm by Suman Roy
+// HacktoberFest 2021
+
 // Display list of numbers in the array
 void showNumbers(int* numbers, int size){
     int i=0;
