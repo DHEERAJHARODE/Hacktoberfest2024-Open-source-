@@ -33,10 +33,18 @@ def translate(word):
 
 
 print("Welcome to My Dictionary App :)")
+
 word = input("Enter the word to find its meaning : ")
-output = translate(word)
-if type(output) == list:
-    for i in output:
-        print(" - " + i)
-else:
-    print(output)
+while word:
+    output = translate(word)
+    if type(output) == list:
+        for i in output:
+            print(" - " + i)
+        print("enter another word or press enter to quit")
+        word = input("Enter the word to find its meaning : ")
+    else:
+        print(output)
+        print("enter another word or press enter to quit")
+        word = input("Enter the word to find its meaning : ")
+
+
