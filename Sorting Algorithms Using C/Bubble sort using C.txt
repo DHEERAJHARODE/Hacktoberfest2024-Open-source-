@@ -1,17 +1,10 @@
 #include<stdio.h>
- 
-int main()
-{
-    int arr[10], a, b, n;
-    printf("How many elements do you wish to enter?\n");
-    scanf("%d", &n);
-    printf("What are your %d elements of choice?\n", n);
-    for(a=0;a<n;a++)
-    {
-    scanf("%d",& arr[a]);
-    }
 
-   for(a = 0; a < n - 1; ++a)
+// function for sort by bubble sort
+void buuble_sort(int a, int b, int n, int arr[])
+{
+
+for(a = 0; a < n - 1; ++a)
    {
        for(b = 0; b < (n - a - 1); ++b)
          if(arr[b] > arr[b+1])
@@ -27,5 +20,21 @@ int main()
    for(a = 0; a < n; ++a)
       printf("%d ", arr[a]);
  
+
+
+}
+ 
+int main()
+{
+    int arr[10], a, b, n;
+    printf("How many elements do you wish to enter?\n");
+    scanf("%d", &n);
+    printf("What are your %d elements of choice?\n", n);
+    for(a=0;a<n;a++)
+    {
+    scanf("%d",& arr[a]);
+    }
+    buuble_sort(a,b,n,arr)
+   
    return 0;
 }
