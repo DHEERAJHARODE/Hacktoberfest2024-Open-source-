@@ -1,4 +1,4 @@
-// to decrpyt what we just encrypted by adding 1 to the ascii value
+// to decrpyt what we just encrypted , we subtract 1 from the ascii value of the encrypted message.
 #include<stdio.h>
 #include<string.h>
 void decrypt (char *str){
