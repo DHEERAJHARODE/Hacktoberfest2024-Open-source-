@@ -5,6 +5,7 @@
 import json
 from difflib import get_close_matches
 
+#loading data from data.json file
 data = json.load(open("data.json"))
 
 # fucntion to find the word
@@ -36,7 +37,7 @@ print("Welcome to My Dictionary App :)")
 
 word = input("Enter the word to find its meaning : ")
 while word:
-    output = translate(word)
+    output = translate(word)  #calling the function with parameter "word" which is storing the word entered by user
     if type(output) == list:
         for i in output:
             print(" - " + i)
