@@ -1,0 +1,51 @@
+#include <stdio.h>
+ 
+#define MAX 100
+ 
+int main()
+{
+    int arr[MAX],limit;
+    int i,j,temp,k;
+    scanf("%d",&limit);
+    
+    for(i=0; i<limit; i++)
+    {
+        scanf("%d",&arr[i]);
+    }
+    for(i=1; i<(limit); i++)
+    {
+        j=i;
+        while(j>0 && arr[j]>arr[j-1])
+        {
+            temp=arr[j];
+            arr[j]=arr[j-1];
+            arr[j-1]=temp;
+            j--;
+                
+        }
+        for(k=0; k<limit; k++)
+      printf("%d ",arr[k]);
+      printf("\n"); 
+    }
+for(k=0; k<limit; k++)
+printf("%d ",arr[k]);
+printf("\n");    
+int  toSearch, found,y;
+scanf("%d", &toSearch);
+found = 0; 
+for(y=0; y<limit; y++)
+if(arr[y] == toSearch)
+{
+ found = 1;
+break;
+}
+if(found == 1)
+{
+    printf("%d %d", toSearch, y);
+}
+else
+{
+printf("%d -1", toSearch);
+ }  
+return 0;
+}
