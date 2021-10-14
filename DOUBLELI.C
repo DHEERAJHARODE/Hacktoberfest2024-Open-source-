@@ -203,5 +203,5 @@ rev()
 		p2=p2->prev; /*next of p2 changed to prev */
 	}
 	start=p1;
-}/*End of rev()*/
+}
 
