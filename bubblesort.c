@@ -1,50 +1,36 @@
-/* BUBBLE SORT PROGRAM IN C USING FUNCTION - BUBBLESORT.C */
-
-#include<stdio.h>
-#include<stdlib.h>
-
-void bubblesort (long a[],long size)
-{
-  int temp, i, j;
-  for (i = 0; i < (size-1); i++)
-    {
-      int swapped = 0;//flag variable
-      for (j = 0; j < (size-i-1); j++)
-	{
-	  if (a[j] > a[j + 1])
-	    {
-	       // swapping
-	      swapped = 1;
-	      temp = a[j];
-	      a[j] = a[j + 1];
-	      a[j + 1] = temp;
-	    }
-	}
-      if (swapped == 0)//if no swapping in the previous iteration i.e. sorting done
-	break;
-    }
-}
-
-
-void main ()
-{
-  long int n, i;
-
-  printf ("\n Enter the size of the array: ");
-  scanf ("%ld", &n);
-
-  long a[n];
-
-  printf ("\n Enter the array elements: \n");
-
-//   fetch input
-  for (i = 0; i < n; i++)
-    scanf ("%ld", &a[i]);
-    
-  bubblesort (a, n);
-  
-//   print the output
-  printf ("\n The sorted array is\n");
-  for (i = 0; i < n; i++)
-    printf ("%ld ", a[i]);
-}
+#include<stdio.h>    
+ void print(int a[], int n) //function to print array elements  
+    {  
+    int i;  
+    for(i = 0; i < n; i++)    
+    {    
+        printf("%d ",a[i]);    
+    }        
+    }  
+ void bubble(int a[], int n) // function to implement bubble sort  
+ {  
+   int i, j, temp;  
+   for(i = 0; i < n; i++)    
+    {    
+      for(j = i+1; j < n; j++)    
+        {    
+            if(a[j] < a[i])    
+            {    
+                temp = a[i];    
+                a[i] = a[j];    
+                a[j] = temp;     
+            }     
+        }     
+    }     
+ }  
+void main ()    
+{    
+    int i, j,temp;     
+    int a[5] = { 10, 35, 32, 13, 26};     
+    int n = sizeof(a)/sizeof(a[0]);   
+    printf("Before sorting array elements are - \n");  
+    print(a, n);  
+    bubble(a, n);  
+    printf("\nAfter sorting array elements are - \n");    
+    print(a, n);  
+} 
