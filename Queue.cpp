@@ -29,8 +29,8 @@ void Display() {
    else {
       cout<<"Queue elements are : ";
       for (int i = front; i <= rear; i++)
-      cout<<queue[i]<<" ";
-         cout<<endl;
+         cout<<queue[i]<<" ";
+      cout<<endl;
    }
 }
 int main() {
@@ -44,13 +44,13 @@ int main() {
       cin<<ch;
       switch (ch) {
          case 1: Insert();
-         break;
+                 break;
          case 2: Delete();
-         break;
+                 break;
          case 3: Display();
-         break;
+                 break;
          case 4: cout<<"Exit"<<endl;
-         break;
+                 break;
          default: cout<<"Invalid choice"<<endl;
       }
    } while(ch!=4);
