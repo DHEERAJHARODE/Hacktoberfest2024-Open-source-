@@ -1,0 +1,79 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include<string.h>
+struct Node
+{
+ int data;
+ struct Node *next;
+}*first=NULL,*second=NULL;
+
+void Display(struct Node *p)
+{
+
+
+ while(p!=NULL)
+ {
+ printf("%d\n",p->data);
+ p=p->next;
+ }
+}
+
+void create(int A[20],int n)
+{
+ struct Node *t,*last;
+ first=(struct Node *)malloc(sizeof(struct Node));
+ first->data=A[0];
+ first->next=NULL;
+ last=first;
+ int i;
+ for(i=1;i<n;i++)
+ {
+ t=(struct Node*)malloc(sizeof(struct Node));
+ t->data=A[i];
+ t->next=NULL;
+ last->next=t;
+ last=t;
+ }
+}
+
+void RemoveDuplicate(struct Node *p)
+{
+ while(p!=NULL && p->next!=NULL)
+ {
+     struct Node*q=p;
+     while(q->next!=NULL)
+    {
+
+     if(p->data==q->next->data)
+    {
+        struct Node *r=q->next;
+        q->next=q->next->next;
+        free(r);
+    }
+    else
+
+        q=q->next;
+    }
+    p=p->next;
+ }
+}
+
+int main()
+{
+
+    int A[20];
+    int i,n;
+
+    scanf("%d",&n);
+    for(i = 0; i<n; i++)
+    {
+        scanf("%d\n",&A[i]);
+
+    }
+    //printf("%s\n",A[0][20]);
+    create(A,n);
+    RemoveDuplicate(first);
+    Display(first);
+
+    return 0;
+}
