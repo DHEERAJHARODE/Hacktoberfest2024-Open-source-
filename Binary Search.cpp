@@ -24,7 +24,7 @@ scanf("%d",&b[i][j]);
 }    
 }    
     
-printf("multiply of the matrix=\n");    
+printf("after multiply of the two matrix=\n");    
 for(i=0;i<r;i++)    
 {    
 for(j=0;j<c;j++)    
