@@ -6,6 +6,7 @@ void swapping(int &a, int &b) {      //swap the content of a and b
    a = b;
    b = temp;
 }
+//displaying sorted array
 void display(int *array, int size) {
    for(int i = 0; i<size; i++)
       cout << array[i] << " ";
