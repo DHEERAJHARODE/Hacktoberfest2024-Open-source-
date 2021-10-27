@@ -20,21 +20,14 @@ Space Complexity : O(n) where n is the size of the linkedlist
 class Solution {
 public:
     ListNode* reverseList(ListNode* head) {
-        vector<int>res;
-        ListNode* temp = head;
-        while(temp)
-        {
-            res.push_back(temp->val);
-            temp = temp->next;
+        ListNode* prev =NULL, *node = head;
+        while(node){
+            ListNode* temp = node->next;
+            node->next = prev;
+            prev = node;
+            node = temp;
         }
+        return prev;
         
-        temp = head;
-        
-        for(int i=res.size()-1; i>=0;i--)
-        {
-            temp->val = res[i];
-            temp =temp->next;
-        }
-        return head;
     }
 };
