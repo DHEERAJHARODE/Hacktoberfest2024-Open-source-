@@ -1,0 +1,12 @@
+Optimised Approach [IMP]
+1. Start from the top right element.
+2. You are at (r,c)
+if(matrix[r][c] == target)
+return true
+If (matrix[r][c] > target)
+c--
+else
+r++;
+
+At (r,c), you can go to (r-1,c) or (r,c-1), depending on the value of matrix[i][j]
+and target.
