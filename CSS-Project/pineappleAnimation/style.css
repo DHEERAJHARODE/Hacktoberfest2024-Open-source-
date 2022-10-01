@@ -132,6 +132,8 @@ body{
     border-radius: 25px;
     z-index: -1;
 }
+/* contributed by Dibwarjeet Bordolai https://github.com/git-dibwar */
+
 .leg-left{
     left:22px;
     animation: legs 0.6s infinite;
@@ -182,6 +184,7 @@ body{
     right: 0;
     top: 105px;
 }
+/* contributed by Dibwarjeet Bordolai https://github.com/git-dibwar */
 @keyframes jump{
     50%{
         top: 95px;
