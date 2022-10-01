@@ -1,0 +1,120 @@
+<!DOCTYPR html>
+<html lang="eb">
+<head>
+   <title>Pure Css Hover Circle best</title>
+</head>
+<body>
+<style>
+@import url('https://fonts.googleapis.com/css?family=Oswald');
+body {
+  margin: 0px;
+}
+#circle-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: lightblue;
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+}
+.circle {
+  width: 50vh;
+  height: 50vh;
+  position: absolute;
+  border-radius: 50%;}
+#one:before {
+  content: "Hover Me!";
+}
+#one {
+  background-color: rgba(0,0,225, 0.45);
+  font-size: 40px;
+  font-family: "Oswald", sans-serif;
+  letter-spacing: 1.5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-weight: bold;
+  transition: 1s;
+}
+#two {
+  background-color: green;
+  transition: 1s;
+  opacity: 0.5;
+}
+#three {
+  background-color: red;
+  transition: 1s;
+  opacity: 0.5;
+}
+#four {
+  background-color: orange;
+  transition: 1s;
+  opacity: 0.5;
+}
+#five {
+  background-color: green;
+  transition: 1s;
+  opacity: 0.5;
+}
+#cc {
+  position:relative;
+  width: 50vh;
+  height: 50vh;
+  border-radius: 50%;
+  overflow: hidden;
+}
+#cc:hover #two {
+  transform: translate(0px, 75px);
+}
+#cc:hover #three {
+  transform: translate(0px, -75px);
+}
+#cc:hover #four {
+  transform: translate(75px, 0px);
+}
+#cc:hover #five {
+  transform: translate(-75px, 0px);
+}
+#mb {
+  position: absolute;
+  font-family: "Oswald", sans-serif;
+  letter-spacing: 0.5px;
+  bottom: 0px;
+  display: flex;
+  justify-content: center;
+  width: 100vw;
+  background-color: #3B3A6D;
+  color: white;
+}
+#mb a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 0px;
+}
+#mb p {
+  padding: 5px;
+  margin: 0px;
+}
+</style>
+
+<div id="circle-container">
+  <div id="cc">
+  <div class="circle" id="five"></div>
+  <div class="circle" id="four"></div>
+  <div class="circle" id="three"></div>
+  <div class="circle" id="two"></div>
+  <div class="circle" id="one"></div>
+  </div>
+</div>
+
+<div id="mb">
+  <p>Made By 
+  <a href="#" target="_blank">Akki Chaudhary</a>
+  </p>
+</div>
+
+</body>
+</html>
