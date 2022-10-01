@@ -1,18 +1,20 @@
-# Hactoberfest 2021
-<img src=https://hacktoberfest.digitalocean.com/_nuxt/img/logo-hacktoberfest-full.f42e3b1.svg />
-A beginner-friendly project to help you in open-source contribution. Made specifically for contribution in HACKTOBERFEST 2021! Hello World Programs and Algorithms! Please leave a star to support this project! 
+# Hactoberfest 2022 ✨🥳🔥
+
+A beginner-friendly project to help you in open-source contribution. 
+<br>
+Made specifically for contribution in HACKTOBERFEST 2021! Hello World Programs and Algorithms! Please leave a star to support this project! 
 ![](https://hacktoberfest.digitalocean.com/_nuxt/img/logo-hacktoberfest-full.f42e3b1.svg)
 
-# This All programs For beginner 
+# This All programs For beginner 🧑🏻‍🎓
 Enjoy All
 Hacktoberfest has a simple and plain moto.
 
 # Beginner-Hacktoberfest
-Need Your first pr for hacktoberfest 2k21 ? come on in 
+Need Your first pr for hacktoberfest 2022? come on in 
 
 ---
 
-# ❓ What's Hacktoberfest 2021?
+# What's Hacktoberfest 2022 ⁉️
 
 Hacktoberfest is the easiest way to get into open source! Hacktoberfest is a month long festival of open source code presented by [Digital Ocean](https://www.digitalocean.com/) and [DEV](https://www.dev.to/) this year in 2021.
 
@@ -22,7 +24,7 @@ If you’ve never contributed to open source before, this is the perfect time to
 
 ---
 
-# 👕 Why Should I Contribute?
+# Why Should I Contribute? 🤔
 
 Hacktoberfest has a simple and plain moto.
 
@@ -34,7 +36,7 @@ So, yes! You can win a T-Shirt and few awesome stickers to attach on your laptop
 
 ---
 
-# 👍 This is Awesome! How Can I Contribute?
+# This is Awesome! How Can I Contribute? 👍🏻🌟
 
 It's very easy. You don't need to be an expert in coding and programming. Here are the steps you need to follow to create your -(maybe)- EXAMPLE first pull request within few minutes.
 1. **Star this repository.**
@@ -49,7 +51,7 @@ It's very easy. You don't need to be an expert in coding and programming. Here a
 
 
 ---
-## Code Of Conduct
+## Code Of Conduct 🧑🏻‍💻
 **Examples of behavior that contributes to creating a positive environment :**
 - Using welcoming and inclusive language
 - Gracefully accepting constructive criticism
@@ -64,8 +66,8 @@ It's very easy. You don't need to be an expert in coding and programming. Here a
 - Publishing others' private information, such as a physical or electronic address, without explicit permission
 ---
 
-## 🎯Objectives
-**The Main Objectives of this Repositry is to help People for their Contribution in Hacktoberfest 2021**
+## Objectives 🎯
+**The Main Objectives of this Repositry is to help People for their Contribution in Hacktoberfest 2022 and Open-Source**
 
 <!-- # :handshake: Our Contributors
 <a href="https://github.com/hctnm2/Beginner-Hacktoberfest/graphs/contributors">
