@@ -1,34 +1,23 @@
-#include<iostream>
+#include <iostream>
 using namespace std;
-int main()
-{
-    intnum, temp, noOfDigit=0, res=0, rem, pow, i;
-    cout<<"Enter the Number: ";
-    cin>>num;
-    temp = num;
-    while(num>0)
-    {
-        num = num/10;
-        noOfDigit++;
+ 
+int main() {
+    int n;
+    cout << "Enter a number : ";
+    cin >> n;
+     
+    int sum = 0;
+    int digit;
+    int temp = n;
+    while (temp > 0) {
+        digit = temp % 10;
+        sum = sum + (digit * digit * digit);
+        temp = temp / 10;
     }
-    num = temp;
-    while(num>0)
-    {
-        rem = num%10;
-        pow = 1;
-        i = 0;
-        while(i<noOfDigit)
-        {
-            pow = pow*rem;
-            i++;
-        }
-        res = res + pow;
-        num = num/10;
+     
+    if (sum == n) {
+        cout << "An Armstrong Number." << endl;
+    } else {
+        cout << "Not an Armstrong Number." << endl;
     }
-    if(res==temp)
-        cout<<"\nIt is an Armstrong Number";
-    else
-        cout<<"\nIt is not an Armstrong Number";
-    cout<<endl;
-    return 0;
 }
