@@ -1,24 +1,23 @@
-#include <bits/stdc++.h>
+#include "iostream"
 using namespace std;
-  
-bool isPrime(int n)
-{
-    // Corner case
-    if (n <= 1)
-        return false;
-  
- 
-    for (int i = 2; i < n; i++)
-        if (n % i == 0)
-            return false;
-  
-    return true;
-}
-  
-
-int main()
-{
-    isPrime(11) ? cout << " true\n" : cout << " false\n";
-    isPrime(15) ? cout << " true\n" : cout << " false\n";
+int main() {
+    
+    // 'n' is the number we want to check is prime or not.
+    int n;
+    cin >> n;
+    if (n < 2) {
+        cout << "false" << endl;
+        return 0;
+    }
+    bool isPrime = true;
+    
+    // Iterate over all the possible smaller divisor of n.
+    for (int i = 2;i * i <= n;++i) {
+        if (n % i == 0) {
+            isPrime = false;
+            break;
+        }
+    }
+    cout << (isPrime ? "true" : "false") << endl;
     return 0;
 }
