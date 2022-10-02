@@ -1,28 +1,37 @@
-#include <iostream>
+#include<iostream>
 using namespace std;
-
-int main() {
-   int a[10][10], transpose[10][10], row, column, i, j;
-
-   cout << "Enter rows and columns of matrix: ";
-   cin >> row >> column;
-
-   cout << "\nEnter elements of matrix: " << endl;
-
-   // Storing matrix elements
-   for (int i = 0; i < row; ++i) {
-      for (int j = 0; j < column; ++j) {
-         cout << "Enter element a" << i + 1 << j + 1 << ": ";
-         cin >> a[i][j];
-      }
-   }
-
-   // Printing the a matrix
-   cout << "\nEntered Matrix: " << endl;
-   for (int i = 0; i < row; ++i) {
-      for (int j = 0; j < column; ++j) {
-         cout << " " << a[i][j];
-         if (j == column - 1)
-            cout << endl << endl;
-      }
-   }
+int main()
+{
+    int mat[10][10], matT[10][10];
+    int matRow, matCol, i, j;
+    cout<<"Enter Row and Column Size of Matrix: ";
+    cin>>matRow>>matCol;
+    cout<<"Enter "<<matRow*matCol<<" Elements for "<<matRow<<"*"<<matCol<<" Matrix: ";
+    for(i=0; i<matRow; i++)
+    {
+        for(j=0; j<matCol; j++)
+            cin>>mat[i][j];
+    }
+    cout<<"\nOriginal Matrix is:\n";
+    for(i=0; i<matRow; i++)
+    {
+        for(j=0; j<matCol; j++)
+            cout<<mat[i][j]<<"  ";
+        cout<<endl;
+    }
+    // copying the transpose of given matrix to matT[][]
+    for(i=0; i<matRow; i++)
+    {
+        for(j=0; j<matCol; j++)
+            matT[j][i] = mat[i][j];
+    }
+    cout<<"\nTranspose of Given Matrix is:\n";
+    for(i=0; i<matCol; i++)
+    {
+        for(j=0; j<matRow; j++)
+            cout<<matT[i][j]<<"  ";
+        cout<<endl;
+    }
+    cout<<endl;
+    return 0;
+}
