@@ -1,7 +1,7 @@
 #include <iostream>
 #include <queue>
 
-/*std::queue::front() references the last element of a queue container*/
+/*std::queue::back() references the last element of a queue container*/
 
 int main()
 {
