@@ -1,4 +1,7 @@
 #include <stdio.h>
+
+// Insertion sort is a simple to understand and code sorting algorithm
+// Its time complexity is O(n^2)
 int main()
 {
     int n, i, j, temp;
@@ -15,6 +18,7 @@ int main()
     for (i = 1 ; i <= n - 1; i++)
     {
 	    j = i;
+	    // Slides the element in index j to the left until a smaller element appears
             while ( j > 0 && arr[j-1] > arr[j])
             {	        
                 temp     = arr[j];
