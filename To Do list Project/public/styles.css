@@ -1,0 +1,116 @@
+* {
+    font-family: cursive;
+    box-sizing: border-box;
+}
+
+h1 {
+    padding: 10px;
+}
+
+.box {
+    max-width: 450px;
+    margin: 20px auto;
+    background: white;
+    border-radius: 5px;
+    box-shadow: 7px 7px 15px 5px rgba(0, 0, 0, 0.3);
+}
+
+#heading {
+    background-color: #353434;
+    text-align: center;
+}
+
+.item {
+    min-height: 70px;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #F1F1F1;
+}
+
+.item:last-child {
+    border-bottom: 0;
+}
+
+input:checked+p {
+    text-decoration: line-through;
+    text-decoration-color: #353434;
+}
+
+input[type="checkbox"] {
+    appearance: none;
+    margin: 20px;
+    height: 25px;
+    width: 25px;
+    border: 2px solid black;
+    border-radius: 3px;
+}
+
+input[type="checkbox"]:hover,
+input[type="checkbox"]:focus {
+    transform: scale(1.2);
+    background-color: #353434;
+    color: white;
+    cursor: pointer;
+
+}
+
+input[type="checkbox"]:checked {
+    clip-path: polygon(14% 44%, 0 65%,
+            50% 100%, 100% 16%, 80% 0%, 43% 62%);
+}
+
+p {
+    text-align: left;
+    margin: 0;
+    padding: 20px;
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #353434;
+    text-shadow: 2px 2px gray;
+}
+
+form {
+    text-align: center;
+    padding: 10px;
+}
+
+button {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    font-size: 1.5rem;
+    background-color: #494848;
+    border-top: 4px solid white;
+    border-left: 4px solid white;
+    border-bottom: 4px solid black;
+    border-right: 4px solid black;
+    color: white;
+}
+
+button:hover {
+    cursor: pointer;
+    color: #494848;
+    background-color: white;
+    border: 3px solid #494848;
+    box-shadow: 4px 4px 5px rgba(0, 0, 0, 0.459);
+}
+
+input[type="text"] {
+    margin: 5px;
+    text-align: center;
+    height: 50px;
+    background: transparent;
+    font-size: 20px;
+    font-weight: 200;
+    width: 100%;
+    border: none;
+    border-bottom: 4px solid #494848;
+}
+
+input[type="text"]:focus {
+    outline: none;
+    border: 2px solid #494848;
+    border-bottom: 4px solid #494848;
+    border-radius: 5px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.301);
+}

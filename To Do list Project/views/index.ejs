@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible"
+		content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="styles.css">
+	<title>To-do List</title>
+</head>
+
+<body>
+	<div class="box" id="heading">
+		<h1 style="color: #ffffff">
+			<%= today %>
+		</h1>
+	</div>
+
+	<div class="box">
+		<% if (tasks.length===0) {%>
+			<p style="text-align: center;">
+				No Task Added Yet
+			</p>
+
+		<% } else { %>
+			<% for (var i=0; i< tasks.length; i++){ %>
+				<form action="/delete" method="post">
+					<div class="item">
+						<input type="checkbox" name="checkbox"
+							value="<%=tasks[i]._id%>"
+							onchange="this.form.submit()">
+						<p>
+							<%= tasks[i].name %>
+						</p>
+					</div>
+					<hr>
+				</form>
+			<% } %>
+		<% } %>
+		<form class="item " action="/" method="POST">
+			<input type="text" name="newTask"
+				autocomplete="off"
+				placeholder="Add a New Task Here">
+			
+			<button type="submit" name="submit">+</button>
+		</form>
+	</div>
+</body>
+
+</html>
