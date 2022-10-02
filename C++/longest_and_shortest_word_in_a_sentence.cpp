@@ -17,7 +17,7 @@ int main()
 
 	int min_length = len, min_start_index = 0, max_length = 0, max_start_index = 0;
 
-	// Loop while input string is not empty
+	
 	while (b <= len)
 	{
 		if (b < len && str[b] != ' ')
@@ -25,8 +25,7 @@ int main()
 		
 		else
 		{
-			// end of a word
-			// find curr word length
+			
 			int curr_length = b - a;
 		
 			if (curr_length < min_length)
