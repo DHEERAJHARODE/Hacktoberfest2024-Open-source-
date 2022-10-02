@@ -1,3 +1,6 @@
+// Heapsort is an in-place sorting algorithm
+// It is a non-stable sorting algorithm
+// Its time efficiency is O(nlog(n))
 public class HeapSort {
   
     public void sort(int arr[]) {
