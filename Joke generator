@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Joke Generator</title>
+        <style type="text/css" media="all">
+          body{
+              height: 100vh;
+              display: grid;
+              place-items: center;
+          }
+          section{
+            width: 300px;
+            padding: 10px;
+            background: #d4e0ff;
+            border-radius: 5px;
+          }
+          div{
+              background: dodgerblue;
+              padding: 10px;
+              border-radius: 5px;
+              text-align: center;
+          }
+        </style>
+    </head>
+    <body>
+
+        <section>
+          <h2>Joke Generator</h2>
+          <p></p>
+          <div>
+            Generate
+          </div>
+        </section>
+
+      <script type="text/javascript" charset="utf-8">
+
+      const elm = document.querySelector('p');
+      const btn = document.querySelector('div');
+
+      async function loadJoke(){
+        const jokeData = await fetch('https://icanhazdadjoke.com/', {
+          headers: {
+            Accept: "application/json"
+          }
+        })
+        .then(response => response.json())
+
+        elm.innerHTML = jokeData.joke;
+      }
+
+      window.addEventListener("DOMContentLoaded", loadJoke);
+      btn.addEventListener("click", loadJoke);
+
+
+
+      </script>
+
+    </body>
+</html>
