@@ -1,0 +1,29 @@
+long long int count( int S[], int m, int n )
+    {
+        
+        // code here 
+        long long int t[m+1][n+1];          //m is size , n is the sum to obtain           
+        for(int i=0;i<m+1;++i){         
+            for(int j=0;j<n+1;++j){
+                if(i==0){        
+                    t[i][j]=0;   //for arr size 0 ,sum>0 only possible 
+                }
+                if(j==0){        
+                    t[i][j]=1;   //for sum=0 any size of arr will do(using empty set)
+                }
+            }
+        }
+    for(int i=1;i<m+1;++i){         
+            for(int j=1;j<n+1;++j){
+                if(S[i-1]<=j){ 
+                t[i][j]= (t[i][j-S[i-1]]) + (t[i-1][j]);  //possibility1  + possibility2
+            }
+            else{
+                t[i][j]= t[i-1][j];
+            }
+        }
+    }
+    return t[m][n];
+    
+    
+    }
