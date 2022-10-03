@@ -1,0 +1,37 @@
+/****************************************TAG SELECTORS*****************************************/
+body{
+    background-color:#EaF6F6;
+}  
+hr{
+    
+    border-style:none;
+    border-top-style:dotted;
+    border-color: grey;
+    border-width: 5px;
+    
+    width: 10%;
+}
+h1{
+    color: #66BFBF;
+}
+h3{
+    color: #3BACB6;
+}
+
+
+
+/****************************************CLASS SELECTORS*****************************************/
+
+.myimage{
+    
+    height: 150px;
+    width: 145px;
+
+}
+
+.xyz{
+    border-radius: 100px;
+}
+
+
+/****************************************ID SELECTORS*****************************************/
