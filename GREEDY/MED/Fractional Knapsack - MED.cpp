@@ -50,37 +50,68 @@ Constraints:
 #include <bits/stdc++.h>
 using namespace std;
 
+struct Item {
+    int value;
+    int weight;
+};
+
+bool cmp(struct Item a, struct Item b)
+{
+    double r1 = (double)a.value / (double)a.weight;
+    double r2 = (double)b.value / (double)b.weight;
+    return r1 > r2;
+}
+
+double fractionalKnapsack(int W, struct Item arr[], int N)
+{
+    //    sorting Item on basis of ratio
+    sort(arr, arr + N, cmp);
+ 
+    double finalvalue = 0.0; // Result (value in Knapsack)
+ 
+    // Looping through all Items
+    for (int i = 0; i < N; i++) {
+        // If adding Item won't overflow, add it completely
+        if (arr[i].weight <= W) {
+            W -= arr[i].weight;
+            finalvalue += arr[i].value;
+        }
+ 
+        // If we can't add current Item, add fractional part
+        // of it
+        else {
+            finalvalue
+                += arr[i].value
+                   * ((double)W / (double)arr[i].weight);
+            break;
+        }
+    }
+ 
+    // Returning final value
+    return finalvalue;
+}
+
 int main()
 {
-int t;
-cin>>t;
-while(t--)
-{
-int n,cap,ele,val;
-float value=0;
-cin>>n>>cap;
-vector<pair<float,pair<int,int>>>v;
-for(int i=0;i<n;i++) {cin>>val>>ele;
-float ing = float(val)/ele;
-v.push_back(make_pair(ing,(make_pair(val,ele))));
+    int t;
+    cin>>t;
+    while(t--)
+    {
+        int n,w;
+        cin>>n>>w;
+        struct Item arr[n];
+        for(int i=0;i<n;i++)
+        {
+            cin>>arr[i].value;
+        }
+        for(int i=0;i<n;i++)
+        {
+            cin>>arr[i].weight;
+        }
+        double ans = fractionalKnapsack(w,arr,n);
+        cout << fixed << setprecision(2) <<ans<<"\n";
+    }
+    return 0;
 }
-sort(v.begin(),v.end());
-for(auto i=v.end()-1;i>=v.begin();i--)
-{
-if((*i).second.second<=cap)
-{
-value = value + (((*i).first) * ((*i).second.second));
-cap = cap - (*i).second.second;
-}
-else
-{
-if((*i).second.second>cap)
-(*i).second.second=cap;
-value = value + (((*i).first) * ((*i).second.second));
-cap = cap - (*i).second.second;
-}
-}
-cout << fixed << setprecision(2) <<value<<"\n"; }
-return 0;}
 
 
