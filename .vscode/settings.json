@@ -1,5 +1,7 @@
 {
     "files.associations": {
-        "HelloWorls.C": "cpp"
+        "HelloWorls.C": "cpp",
+        "Bubble_Sort.C": "cpp",
+        "vector": "cpp"
     }
 }
