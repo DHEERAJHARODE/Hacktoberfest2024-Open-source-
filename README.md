@@ -1,14 +1,16 @@
 # Hactoberfest 2022
-<img src=https://hacktoberfest.digitalocean.com/_nuxt/img/logo-hacktoberfest-full.f42e3b1.svg />
+<p align="center">
+  <img src="https://repository-images.githubusercontent.com/544064674/9bbcf522-8455-4be3-b316-392585a08274" />
+</p>
 A beginner-friendly project to help you in open-source contribution. Made specifically for contribution in HACKTOBERFEST 2022! Hello World Programs and Algorithms! Please leave a star to support this project! 
-![](https://hacktoberfest.digitalocean.com/_nuxt/img/logo-hacktoberfest-full.f42e3b1.svg)
+<!-- ![](https://hacktoberfest.digitalocean.com/_nuxt/img/logo-hacktoberfest-full.f42e3b1.svg) -->
 
 # This All programs For beginner 
 Enjoy All
 Hacktoberfest has a simple and plain moto.
 
 # Beginner-Hacktoberfest
-Need Your first pr for hacktoberfest 2k21 ? come on in 
+Need Your first pr for hacktoberfest 2k22 ? come on in 
 
 ---
 
