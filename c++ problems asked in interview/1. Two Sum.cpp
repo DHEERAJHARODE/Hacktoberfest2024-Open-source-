@@ -25,39 +25,22 @@ Solution :
 class Solution {
 public:
     vector<int> twoSum(vector<int>& nums, int target) {
-        unordered_map<int, int>res ; 
-        vector<int> result;
         
-        for(int i=0;i<nums.size();i++){
-            if(res.find(target-nums[i])!=res.end())
-            {
-                result.push_back(i);
-                result.push_back(res[target-nums[i]]);
-                break;
+       int n = nums.size();
+        
+        for(int i=0; i<n; i++){
+            for(int j=i+1; j<n; j++){
+                if(nums[i] + nums[j] == target){
+                    return {i,j};
+                }
             }
-            else
-                res[nums[i]]=i;
         }
-        return result;
+       throw;
     }
 };
 
+// edited by - Malay Shah
 Time Complexity : O(n)
 
  
-class Solution {
-public:
-    vector<int> twoSum(vector<int>& nums, int target) {
-        unordered_map<int,int>m;
-        for(int i=0;i<nums.size();i++)
-        {
-            int diff = target-nums[i];
-            if(m.count(diff))
-                return {m[diff],i};
-            else
-                m[nums[i]]=i;
-        }
-        return {-1,-1};
-        
-    }
-};
+
