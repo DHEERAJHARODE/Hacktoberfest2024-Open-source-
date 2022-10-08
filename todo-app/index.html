@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+    />
+    <title>Todo Project</title>
+  </head>
+
+  <body>
+    <!-- start writing your code -->
+    <main>
+      <header>
+        <h1>Add Todo List</h1>
+        <hr />
+      </header>
+      <section id="parent-section">
+        <input
+          type="text"
+          placeholder="add task description here ..."
+          id="input-todo"
+          required
+          autofocus
+        />
+        <button class="btn" title="Add Task" id="add-task-btn">
+          <i class="fa-solid fa-circle-plus"></i>
+        </button>
+        <button
+          class="btn delete-task-btn"
+          title="Delete All Tasks"
+          id="delete-all-user-task-btn"
+        >
+          <i class="fa-solid fa-trash-can"></i>
+        </button>
+      </section>
+    </main>
+  </body>
+</html>
