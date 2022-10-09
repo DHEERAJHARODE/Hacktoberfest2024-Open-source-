@@ -1,14 +1,16 @@
+![hackto](https://user-images.githubusercontent.com/87946275/194774770-9ecb5d11-3368-4858-b676-e3df0e08887a.png)
+
 # Hactoberfest 2022
-<img src=https://hacktoberfest.digitalocean.com/_nuxt/img/logo-hacktoberfest-full.f42e3b1.svg />
-A beginner-friendly project to help you in open-source contribution. Made specifically for contribution in HACKTOBERFEST 2022! Hello World Programs and Algorithms! Please leave a star to support this project! 
-![](https://hacktoberfest.digitalocean.com/_nuxt/img/logo-hacktoberfest-full.f42e3b1.svg)
 
-# This All programs For beginner 
-Enjoy All
-Hacktoberfest has a simple and plain moto.
+A beginner-friendly project to help you in open-source contribution. Made specifically for contributions in HACKTOBERFEST 2022! Hello World Programs and Algorithms! Please leave a star to support this project! 
 
-# Beginner-Hacktoberfest
-Need Your first pr for hacktoberfest 2k21 ? come on in 
+# These programs are for beginners
+Enjoy Everyone!
+
+"HACKTOBERFEST ISN’T ALL ABOUT CODE. ANYONE WHO WRITES, DESIGNS, TESTS, MENTORS, OR ORGANIZES OFFERS MUCH NEEDED SUPPORT FOR OPEN-SOURCE PROJECTS ALL OVER THE WORLD."
+
+# 🔰 Beginner-Hacktoberfest
+Need your first PR for Hacktoberfest 2k21? Come On In!🤘🏻 
 
 ---
 
@@ -38,10 +40,10 @@ So, yes! You can win a T-Shirt and few awesome stickers to attach on your laptop
 
 It's very easy. You don't need to be an expert in coding and programming. Here are the steps you need to follow to create your -(maybe)- EXAMPLE first pull request within few minutes.
 1. **Star this repository.**
-2. **Navigate To index.html or main.css do so crazy contribution file**
-3. **Edit the file and insert the line of text in the specified location in the format as given in comment .**
+2. **Navigate to index.html or main.css and do crazy contributions to those files**
+3. **Edit the file and insert the line of text in the specified location in the format as given in comment.**
 4. **Now click on Propose button.**
-5. **Create a new pull request.**
+5. **Create a new Pull Request.**
 6. **Wait for your Pull Request to be reviewed and merged!**
 7. **Enjoy and welcome to Hacktoberfest 2022 and Keep Contributing :)**
 
