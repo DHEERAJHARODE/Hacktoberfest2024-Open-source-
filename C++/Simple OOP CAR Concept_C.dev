@@ -1,0 +1,81 @@
+#include<iostream>
+using namespace std;
+
+class wheel
+{
+private:
+string state;
+public:
+	string i;
+void set_wheel_state(string s)
+{
+state=s;
+i=s;	
+}	
+
+string get_wheel_state()
+{
+	return state;
+}
+	
+};
+
+class car:public wheel
+{
+private:	
+string wheel[4];
+public:
+string i;
+void set_car_to_moving()
+{
+for(int i=0;i<4;i++)
+{
+wheel[i]="Turning";	
+}
+}	
+
+void set_car_to_stopped()
+{
+for(int i=0;i<4;i++)
+{
+wheel[i]="Stopped";	
+}
+}
+
+void print_car_wheel()
+{
+	cout<<"enter wheel state!";
+	cin>>i;
+ set_wheel_state(i);
+	string get_wheel_state();
+	cout<<"Car state:\n";
+if(i=="moving"){
+
+	set_car_to_moving();
+	for(int i=0;i<4;i++)
+	{
+		cout<<"wheel "<<i<<" is "<<wheel[0]<<endl;
+	}
+}
+
+else
+{
+	
+if(i=="stopped"){
+
+	set_car_to_stopped();
+	for(int i=0;i<4;i++)
+	  {
+		cout<<"wheel "<<i<<" is "<<wheel[0]<<endl;
+	    }
+}
+
+}
+}
+};
+
+int main()
+{
+	car obj;
+	obj.print_car_wheel();
+}
