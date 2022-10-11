@@ -1,10 +1,15 @@
 
 #include <iostream>
 using namespace std;
+int fact(){
+   int f=1,n;
+   cin>>n;
+   for(int i=1;i<=n;i++){
+      f=f*i;
+   }
+   cout<<"Factorial of "<<n<<" is "<<f; 
+}
 int main() {
-   int n = 5, fact = 1, i;
-   for(i=1; i<=n; i++)
-   fact = fact * i;
-   cout<<"Factorial of "<<n<<" is "<<fact;
+   fact();
    return 0;
 }

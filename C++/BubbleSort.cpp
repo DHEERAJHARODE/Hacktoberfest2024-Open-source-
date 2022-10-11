@@ -1,46 +1,21 @@
-#include <bits/stdc++.h>
-
+#include<iostream>
 using namespace std;
-
-void bubbleSort(vector<int> v)
-{
-    int i = 0, t = 0;
-
-    for (int i = 0; i < v.size() - 1; i++)
-    {
-        for (int j = 0; j < v.size() - i - 1; j++)
-        {
-            if (v[j] > v[j + 1])
-            {
-                swap(v[j], v[j + 1]);
-                t++;
-            }
+int main(){
+   int n;
+    cin>>n;
+    int arr[n];
+   for(int i=0;i<n;i++){
+       cin>>arr[i];
+   }
+    for(int i=1;i<5;i++){
+        for(int j=0;j<5;j++){
+           if(arr[j]>arr[j+1]){
+            int temp=arr[j+1];
+            arr[j+1]=arr[j];
+            arr[j]=temp;
+           }
+           cout<<arr[j];
         }
-        if (t == 0)
-        {
-            cout << "Already sorted" << endl;
+         break;
         }
     }
-
-    for (int i = 0; i < v.size(); i++)
-    {
-        cout << v[i] << " ";
-    }
-}
-
-int main()
-{
-    int size;
-    cin >> size;
-
-    vector<int> v1(size);
-
-    for (auto &i : v1)
-    {
-        cin >> i;
-    }
-
-    bubbleSort(v1);
-
-    return 0;
-}
