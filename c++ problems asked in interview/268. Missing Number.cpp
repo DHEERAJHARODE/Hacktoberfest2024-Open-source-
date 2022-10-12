@@ -23,7 +23,7 @@ public:
         int sum = 0 ;
         int n = nums.size();
         for(int i=0;i<n;i++){
-            sum = sum + nums[i];
+            sum += nums[i];
         }
         
         return ( n*(n+1)/2 - sum ); 
@@ -31,3 +31,4 @@ public:
 };
 
 Time Complexity : O(n)
+Space Complexity : O(1)
