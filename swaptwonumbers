@@ -1,11 +1,39 @@
-#include<stdio.h>  
- int main()    
-{    
-int a=10, b=20;      
-printf("Before swap a=%d b=%d",a,b);      
-a=a+b;//a=30 (10+20)    
-b=a-b;//b=10 (30-20)    
-a=a-b;//a=20 (30-10)    
-printf("\nAfter swap a=%d b=%d",a,b);    
-return 0;  
-}   
+
+// C program to swap two variables using third variable
+#include <stdio.h>
+ 
+int main()
+{
+    int x, y;
+    printf("Enter Value of x ");
+    scanf("%d", &x);
+    printf("\nEnter Value of y ");
+    scanf("%d", &y);
+ 
+    int temp = x;
+    x = y;
+    y = temp;
+ 
+    printf("\nAfter Swapping: x = %d, y = %d", x, y);
+    return 0;
+}
+
+
+
+// C program to swap two numbers without using a third variable
+
+#include <stdio.h>
+int main()
+{
+    int a, b;
+    printf("Enter the two numbers : \n");
+    scanf("%d %d", &a, &b);
+    printf("Before swapping A is : %d and B is %d \n", a,
+           b);
+    a = a + b;
+    b = a - b;
+    a = a - b;
+    printf("After swapping A is : %d and B is : %d \n", a,
+           b);
+    return 0;
+}
