@@ -30,5 +30,9 @@ public:
     }
 };
 
+Solution Approach:
+First we find sum of elements of the given array.
+Then, we can get the missing number by subtracting the sum of first n natural numbers from the calculated sum of the array.
+
 Time Complexity : O(n)
 Space Complexity : O(1)
