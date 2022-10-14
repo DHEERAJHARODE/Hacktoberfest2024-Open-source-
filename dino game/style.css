@@ -1,0 +1,55 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+#main {
+    width: 700px;
+    height: 300px;
+    border-bottom: 1px solid black;
+    margin: auto;
+    overflow: hidden;
+}
+
+.dino img{
+    width: 50px;
+    height: 50px;
+}
+
+#dino {
+    height: 50px;
+    width: 50px;
+    position: relative;
+    top: 250px;
+    left: 0;
+}
+
+.jump-action{
+    animation: jump 500ms;
+}
+
+@keyframes jump {
+    0% {top: 250px}
+    30% {top: 175px}
+    70% {top: 175px}
+    100% {top: 250px}
+}
+
+#cactus img{
+    width: 25px;
+    height: 40px;
+}
+
+#cactus {
+    width: 25px;
+    height: 40px;
+    position: relative;
+    top: 210px;
+    left: 625px;
+    animation: cactus 1.3s infinite linear;
+}
+
+@keyframes cactus {
+    0% {left: 675px;}
+    100% {left: -100px;}
+}
