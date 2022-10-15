@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap" rel="stylesheet">
+    <title>Pomodoro Clock</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="main.js"></script>
+</head>
+
+<body onload="display()">
+    <h1>Pomodoro Clock</h1>
+
+    <div class="container">
+        <div class="child" id="ch1">
+            <h2 id="msg">Set some value</h2>
+            <div class="timebox">
+                <div>
+                    <h1 id="min" class="timing"></h1>
+                </div>
+                <div>
+                    <h1 id="colon" class="timing">:</h1>
+                </div>
+                <div>
+                    <h1 id="sec" class="timing"></h1>
+                </div>
+            </div>
+
+        </div>
+
+
+
+
+
+        <div class="child" id="ch2">
+            <div id="status">
+                <h3 class="ts" id="stat"></h3>
+            </div>
+            <div class="ch2ch" id="ch2ch1">
+                <div class="settime" id="st1">
+                    <span class="sst">Set Session</span><br>
+                    <span id="st" class="std"></span><span
+                        style="font-size: 30px; margin-left: 5px;">min</span><br><button class="pmbtn" id="pmbtn1"
+                        onclick="sessionTimeDecrement()">-</button>
+                    <button class="pmbtn" id="pmbtn2" onclick="sessionTimeIncrement()">+</button>
+
+
+                </div>
+                <div class="settime" id="st2">
+                    <span class="sst" id="sst2">Set Break</span><br>
+                    <span id="bt" class="std"></span><span style="font-size: 30px; margin-left: 5px;">min</span><br>
+                    <button class="pmbtn" id="pmbtn3" onclick="breakTimeDecrement()">-</button>
+                    <button class="pmbtn" id="pmbtn4" onclick="breakTimeIncrement()">+</button>
+                </div>
+
+            </div>
+
+
+            <div class="ch2ch" id="ch2ch2">
+                <button class="mnbtn" id="mnbtn1" onclick="start()"></button><button id="rstbtn" class="mnbtn"
+                    onclick="reset()">RESET</button>
+
+
+            </div>
+
+        </div>
+    </div>
+    <div class="footer">
+        <!-- <p>@2021 This Project has been created by Tushar Nain</p> -->
+    </div>
+    <script src="main.js"></script>
+
+    <!-- For dynamic year in the footer -->
+    <script>
+        var footer = document.querySelector(".footer");
+        const date = new Date();
+
+        var para = document.createElement("P");
+        var text = document.createTextNode(`@ ${date.getFullYear()} This Project has been created by Tushar Nain`);
+
+        para.appendChild(text);
+
+        footer.appendChild(para);
+
+    </script>
+</body>
+
+</html>
