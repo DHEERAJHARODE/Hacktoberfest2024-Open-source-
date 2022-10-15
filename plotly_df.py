@@ -12,7 +12,6 @@ def plotly_df(df, title="", n_cols=4):
     "Plots each column of a dataframe in csv format with plotly"
     n = len(df.columns)
     n_rows = n//n_cols + bool(n%n_cols) # +1 row if n%cols not zero
-
     fig = make_subplots(rows=n_rows, cols=n_cols,
                         subplot_titles=[name for name in df.columns],
                         shared_yaxes=True,# rows x cols size necessary to use h_spacing
@@ -22,23 +21,9 @@ def plotly_df(df, title="", n_cols=4):
     for i in range(n):
         try:
             z = df.iloc[:,i]
-            #s, m, a, b = df_slopes.iloc[i,:] # spike, min, ax+b
-            #line = z[int(s):int(m)]
-            #def f(x): return (a)*x+b
             fig.add_trace(go.Scatter(x=df.index, y=z,
                                      line=dict(color="#0069b9"), ),
                           row=i//n_cols+1, col=i%n_cols+1 )
-            # linear fit
-            #z = f(line.index)
-            #w = line.index
-            #fig.add_trace(go.Scatter(x=w, y=z, line=dict(color="#cc0000"), ),
-            #            row=i//n_cols+1, col=i%n_cols+1,
-            #            )
-            
-            #fig.add_annotation(dict(x=w[2*len(w)//3], y=z[0],
-            #                        text=f"m = {a:.2f}", showarrow=False),
-            #                        font = dict(color='#cc0000', size=14),
-            #                        row=i//n_cols+1, col=i%n_cols+1,)
         except:
             print(f"ERROR plotly_df_slopes(): while adding trace number {i}")
     fig.update_layout(title_text="<b>"+title+"</b>", showlegend=False,
@@ -57,7 +42,7 @@ if __name__ == "__main__":
     script = path.basename(__file__)
     print("")
 
-    usage = ("%(prog)s datafile.csv [-h] [-i] [-o] [-d]")
+    usage = ("%(prog)s datafile.csv [-h] [-o]")
     description = """
     Plots each column of a csv file using the plotly library.
     The new plot file is saved as an html file."""
@@ -79,8 +64,6 @@ if __name__ == "__main__":
     df = pd.read_csv(datafile)
     title = path.basename(datafile)[:-4]
     fig = plotly_df(df, title=title, n_cols=4)
-
-    script = path.basename(__file__)
 
     # saves figure in html
     new_html = out_prefix+".html"
