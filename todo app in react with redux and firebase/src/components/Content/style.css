@@ -1,0 +1,57 @@
+.bg-content{
+    height: 100%;
+    overflow: auto;
+    color: #38b593 !important;
+}
+
+@media only screen and (max-width: 768px){
+    .bg-content{
+        height: 506px;
+    }
+}
+
+.text-grey{
+    color: #adadad ;
+    margin: 10px auto;
+}
+
+.field{
+    border: 1px solid #adadad;
+    padding-top: 7px;
+    border-radius: 100px;
+    margin-right: 20px;
+    width: 400px;
+    margin: auto;
+}
+
+.field > label{
+    margin-left: 10px;
+    margin-right: 5px;
+}
+
+.field>input{
+    border: none;
+    outline: none;
+    position: relative;
+    top: 2px;
+    width: 340px;
+}
+
+.field > input:focus{
+    border: none !important;
+    outline: none;
+}
+
+.submit-btn{
+    /* background-color: #fff; */
+    background-color: #7388f5;
+    color: #fff !important;
+    padding: 7px 45px;
+    border-radius: 100px;
+    margin: 20px auto;
+    transition: 0.5s;
+}
+
+.submit-btn:hover{
+    background-color: #6473c2;
+}

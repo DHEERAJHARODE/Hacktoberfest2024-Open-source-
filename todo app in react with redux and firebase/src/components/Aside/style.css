@@ -1,0 +1,19 @@
+.anchor-outline{
+    border: 1px solid #fff !important;
+    color: #fff;
+    /* background-color: #38b593; */
+    border-radius: 100px;
+    padding: 5px 50px;
+    transition: 0.5s;
+}
+
+.anchor-outline:hover{
+    background-color: #fff;
+    color: #7388f5
+}
+
+.bg-sidebar{
+    background-color: #7388f5;
+    height: 100%;
+    overflow: auto;
+}

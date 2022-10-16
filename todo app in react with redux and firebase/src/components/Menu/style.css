@@ -1,0 +1,16 @@
+.menu-bg{
+    background-color: #7488f8;
+}
+
+.icons{
+    padding: 10px 36px;
+    width: 100%;
+}
+
+.icons:first-child{
+    box-shadow: -2px 0px 10px 1px rgba(0, 51, 38, 0.75);
+}
+
+.icons > button{
+    color: #ddd7d7;
+}

@@ -1,0 +1,19 @@
+.task-border{
+    border: 1px solid #eee9e9;
+    box-shadow: 0 4px 9px -2px #eee9e9;
+    margin-bottom: 7px;
+}
+
+.task:first-of-type{
+    margin-top: 17px;
+}
+
+.task:last-of-type{
+    margin-bottom: 17px;
+}
+
+.progress-btn{
+    background: none;
+    border: none;
+    border-radius: 50%;
+}
