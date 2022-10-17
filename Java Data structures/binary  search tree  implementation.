@@ -1,0 +1,14 @@
+// A  function to search a given key in BST
+public Node search(Node root, int key)
+{
+    // Base Cases: root is null / key is present at root
+    if (root==null || root.key==key)
+        return root;
+ 
+    // if Key is greater than root's key
+    if (root.key < key)
+       return search(root.right, key);
+ 
+    // if Key is smaller than root's key
+    return search(root.left, key);
+}
