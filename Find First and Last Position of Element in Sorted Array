@@ -1,0 +1,71 @@
+class Solution {
+public:
+   int firstOcc(vector<int>& nums,int s,int e, int target,int ans) {
+         
+        if(s>e)
+        {
+            return ans;
+        }
+            int mid=s+(e-s)/2;
+            
+            if(nums[mid]==target)
+            {
+                ans=mid;
+                return firstOcc(nums,s,mid-1,target,ans);
+            }
+            
+            if(nums[mid]<target)
+            {
+               return firstOcc(nums,mid+1,e,target,ans);
+            }
+       else{
+           return firstOcc(nums,s,mid-1,target,ans);
+       }
+        
+        return ans;
+        
+        
+    }
+    
+    int lastOcc(vector<int>& nums,int s,int e, int target,int ans) {
+        
+        // int s=0;
+        // int e=nums.size();
+        
+        if(s>e)
+        {
+            return ans;
+        }
+            int mid=s+(e-s)/2;
+            
+            if(nums[mid]==target)
+            {
+                ans=mid;
+                return lastOcc(nums,mid+1,e, target,ans);
+            }
+            
+            if(nums[mid]<target)
+            {
+               return lastOcc(nums,mid+1,e,target,ans);
+            }
+        else
+            return lastOcc(nums,s,mid-1,target,ans);
+        
+        return ans;
+    }
+    
+    
+    vector<int> searchRange(vector<int>& nums, int target) {
+        int s=0;
+        int e=nums.size()-1;
+        int ans=-1;
+        vector<int>sol;
+        int first=firstOcc(nums,s,e,target,ans);
+        int last=lastOcc(nums,s,e,target,ans);
+        
+        sol.push_back(first);
+        sol.push_back(last);
+        return sol;
+        
+    }
+};
