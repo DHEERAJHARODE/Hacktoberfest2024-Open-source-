@@ -8,7 +8,7 @@ Enjoy All
 Hacktoberfest has a simple and plain moto.
 
 # Beginner-Hacktoberfest
-Need Your first pr for hacktoberfest 2k21 ? come on in 
+Need Your first pr for hacktoberfest 2022 ? come on in 
 
 ---
 
