@@ -1,0 +1,261 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.logo{
+    margin-top: -20px;
+    width: 50px;
+}
+
+#header {
+    background: white;
+}
+
+#banner {
+    /* background: url('img/banner_bg.png.webp') no-repeat 0 0; */
+    background-size: cover;
+    height: 580px;
+    display: flex;
+    align-self: center;
+    justify-content: right;
+}
+
+video {
+    object-fit: cover;
+    width: 100vw;
+    height: 93vh;
+    margin-top: -100px;
+    z-index: -1;
+  }
+
+
+.navbar {
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+.nav-item {
+    margin: auto 10px;
+    text-transform: uppercase;
+    font-weight: 500;
+    letter-spacing: 2px;
+}
+
+.nav-link {
+    color: #00c0ff;
+}
+
+.brand-title {
+    font-size: 40px;
+    color: #ffcc00;
+    font-weight: 500;
+}
+
+#banner .container{
+    width: 100%;
+    position: absolute;
+}
+
+
+#banner .row .lead{
+    color: #ebf5fc;
+}
+
+#price,#tip,#contact{
+    margin-top: 100px;
+}
+
+
+
+main{
+    margin-top: 75px;
+}
+
+.text-center h1{
+   color: #ebf5fc;
+   font-family: "Kaushan Script", cursive;
+}
+
+.btn-1 {
+    background-color: white;
+    padding: 0.7rem;
+    border-radius: 2rem;
+    font-weight: bold;
+    color: #0000008C!important;
+}
+
+.btn-2 {
+    background-color: #ff0000;
+    border:none;
+    font-weight: 500;
+    letter-spacing: 2px;
+    padding: 8px 15px 5px 20px;
+    border-radius: 2rem;
+    text-transform: uppercase;
+    color: white;
+    font-weight: 500;
+    transition: .35s ease-in-out;
+}
+
+.btn.btn-2:hover{
+    background-color: #ffcc00;
+}
+
+.ourservice{
+    color: #000;
+    font-family: "Kaushan Script", cursive;
+}
+
+.banner-title {
+    margin: 50px 0;
+    height: 100vh;
+}
+
+.x {
+    font-size: 2em;
+    color: #00c0ff;
+}
+
+.fa-map-marker-alt {
+    color: white;
+}
+
+.services {
+    margin: auto;
+}
+
+.service-item {
+    padding: 30px;
+    box-shadow: 3px 3px 3px 3px #91919180;
+}
+
+.image-hero {
+    background-image: url(img/banner_bg.png.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 80vh;
+}
+
+.overlay {
+    height: 80vh;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.c-1 {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    left: 0;
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.overlay-card {
+    background-color: rgba(0, 0, 0, 0.4);
+    height: 50vh;
+    position: absolute;
+    top: 0;
+}
+
+.card{
+    cursor: pointer;
+}
+
+.img-card {
+    height: 50vh;
+}
+
+
+.input {
+    height: 3.5rem;
+    width: 50vw;
+    border: 3px solid #3e5739;
+    border-radius: 5rem;
+    margin-bottom: 1rem;
+}
+
+footer {
+    font-size: 1.1rem;
+    color: black;
+    text-align: center;
+    height: 30vh;
+    padding-top: 3.5rem;
+    
+    background-color: #073544;
+}
+
+footer .x{
+    font-size: 1em;
+}
+
+footer p{
+    color: #ebf5fc;
+}
+
+@media (max-width:767px) {
+    .img-none {
+        display: none;
+    }
+}
+
+.row1{
+    height:650px
+}
+
+    
+
+.form-control {
+
+	padding-bottom: 0px;
+	position: relative;
+}
+
+
+.form-control.success input {
+	border-color: #2ecc71;
+}
+
+.form-control.error input {
+	border-color: #e74c3c;
+}
+
+.form-control i {
+	visibility: hidden;
+	position: absolute;
+	top: 40px;
+	right: 10px;
+}
+
+.form-control.success i.fa-check-circle {
+	color: #2ecc71;
+	visibility: visible;
+}
+
+.form-control.error i.fa-exclamation-circle {
+	color: #e74c3c;
+	visibility: visible;
+}
+
+.form-control small {
+	color: #e74c3c;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	visibility: hidden;
+}
+
+.form-control.error small {
+    margin-top: 10px;
+	visibility: visible;
+}
+
