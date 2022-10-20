@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<link rel="stylesheet" href="{{ url_for('static', filename='css/materialize.css') }}">
+<link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<script type="text/javascript" src="{{ url_for('static', filename='js/materialize.js') }}"></script>
+
+<title>Blockendance</title>
+{% if name %}
+<h1>Hello {{ name }}, enter attendance status</h1>
+{% else %}
+<h1>Hello, World!</h1>
+{% endif %}
+
+<body class="blue-grey lighten-4">
+
+    <form action="/" method="post">
+
+        {%  for i in range(1, number + 1) %}
+        <p>
+            {{ course }}-{{ year }}-{{ "%02d" %i }}: &emsp;
+            <label>
+                <input type="radio" name="roll_no{{ i }}" value="P">
+                <span>Present &emsp; </span>
+            </label>
+            <label>
+                <input type="radio" name="roll_no{{ i }}" value="A" checked="checked">
+                <span>Absent</span>
+            </label>
+            <br />
+            <br />
+        </p>
+        {% endfor %}
+        <br />
+        <br />
+        <br />
+        <button class="btn waves-effect waves-light" type="submit" name="action">Submit
+            <i class="material-icons right">send</i>
+        </button>
+    </form>
+</body>
