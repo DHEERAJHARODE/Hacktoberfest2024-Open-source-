@@ -1,13 +1,4 @@
-################################################
-# N-Puzzle Solution                            #
-# Artificial Intelligence Assignment - 1       #
-# M.Tech CSE 24'                               #
-                                               #
-# Group Details                                #
-# Name : Krishna Kant Verma (2211CS19)         #
-# Name : Gourab Chatterji (2211CS08)           #
-# Name : Aditi Marathe (2211CS01)              #
-################################################
+#krishna6431
 
 # Importing Queue having Stack Property for DFS
 from queue import LifoQueue
