@@ -1,7 +1,7 @@
-# Hactoberfest 2022
-<img src=https://hacktoberfest.digitalocean.com/_nuxt/img/logo-hacktoberfest-full.f42e3b1.svg />
-A beginner-friendly project to help you in open-source contribution. Made specifically for contribution in HACKTOBERFEST 2022! Hello World Programs and Algorithms! Please leave a star to support this project! 
-![](https://hacktoberfest.digitalocean.com/_nuxt/img/logo-hacktoberfest-full.f42e3b1.svg)
+# Hactoberfest 2022 🎉
+<!-- <img src=https://hacktoberfest.digitalocean.com/_nuxt/img/logo-hacktoberfest-full.f42e3b1.svg /> -->
+A beginner-friendly project to help you in open-source contribution. Made specifically for contribution in **HACKTOBERFEST 2022! Hello World Programs and Algorithms!** Please leave a star to support this project! 
+
 
 # This All programs For beginner 
 Enjoy All
@@ -67,7 +67,11 @@ It's very easy. You don't need to be an expert in coding and programming. Here a
 ## 🎯Objectives
 **The Main Objectives of this Repositry is to help People for their Contribution in Hacktoberfest 2022**
 
-<!-- # :handshake: Our Contributors
-<a href="https://github.com/hctnm2/Beginner-Hacktoberfest/graphs/contributors">
-<!--   <img src="https://contrib.rocks/image?repo=hctnm2/Beginner-Hacktoberfest" /> -->
-<!-- </a> --> 
+---
+
+# 🤝Our Contributors
+<a href="https://github.com/1dharode/Hacktoberfest2022/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=1dharode/Hacktoberfest2022" />
+</a>
+
+Made with [contrib.rocks](https://contrib.rocks).
