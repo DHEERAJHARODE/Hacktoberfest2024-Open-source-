@@ -1,0 +1,107 @@
+* {
+    margin: 0;
+    background-origin: border-box;
+  }
+  
+  body {
+    background: linear-gradient(90deg, #4b6cb7 0%, #182848 100%);
+    min-height: 100vh;
+    font-family: Poppins, sans-serif;
+    font-size: 16px;
+    font-style: normal;
+  }
+  
+  h1 {
+    font-size: 40px;
+    font-style: normal;
+    color: #ffffff;
+    text-transform: uppercase;
+  }
+  
+  i {
+    pointer-events: none;
+  }
+  
+  main {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    align-items: center;
+  }
+  
+  header {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  hr {
+    width: 40px;
+    height: 2px;
+    background-color: white;
+  }
+  
+  section {
+    width: 80vw;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  input {
+    padding: 10px;
+    flex-basis: 60%;
+  }
+  
+  input:disabled {
+    background-color: white;
+  }
+  
+  .btn {
+    padding: 15px;
+  }
+  
+  #add-task-btn {
+    color: white;
+    background-color: #e9993d;
+  }
+  
+  .todo {
+    margin-top: 20px;
+    width: 80vw;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .todo input {
+    padding: 10px;
+    flex-basis: 50%;
+  }
+  
+  .complete-task-btn {
+    color: white;
+    background-color: green;
+  }
+  
+  .edit-task-btn {
+    color: white;
+    background-color: plum;
+  }
+  
+  .delete-task-btn {
+    color: white;
+    background-color: #ec2c2c;
+  }
+  
+  .strike {
+    text-decoration: line-through;
+  }
+  
