@@ -1,6 +1,6 @@
-# Hactoberfest 2022
+# Hactoberfest 2023
 <img src=https://hacktoberfest.digitalocean.com/_nuxt/img/logo-hacktoberfest-full.f42e3b1.svg />
-A beginner-friendly project to help you in open-source contribution. Made specifically for contribution in HACKTOBERFEST 2022! Hello World Programs and Algorithms! Please leave a star to support this project! 
+A beginner-friendly project to help you in open-source contribution. Made specifically for contribution in HACKTOBERFEST 2023! Hello World Programs and Algorithms! Please leave a star to support this project! 
 ![](https://hacktoberfest.digitalocean.com/_nuxt/img/logo-hacktoberfest-full.f42e3b1.svg)
 
 # This All programs For beginner 
@@ -8,13 +8,13 @@ Enjoy All
 Hacktoberfest has a simple and plain moto.
 
 # Beginner-Hacktoberfest
-Need Your first pr for hacktoberfest 2k21 ? come on in 
+Need Your first pr for hacktoberfest 2k23 ? come on in 
 
 ---
 
-# ❓ What's Hacktoberfest 2022?
+# ❓ What's Hacktoberfest 2023?
 
-Hacktoberfest is the easiest way to get into open source! Hacktoberfest is a month long festival of open source code presented by [Digital Ocean](https://www.digitalocean.com/) and [DEV](https://www.dev.to/) this year in 2022.
+Hacktoberfest is the easiest way to get into open source! Hacktoberfest is a month long festival of open source code presented by [Digital Ocean](https://www.digitalocean.com/) and [DEV](https://www.dev.to/) this year in 2023.
 
 During the entire month of October 2022, all you have to do is contribute to any open source projects and open at least 4 pull requests. Yes, any project and any kind of contributions. It can be a be a bug fix, improvement, or even a documentation change! And win a T-Shirt and awesome stickers.
 
@@ -43,7 +43,7 @@ It's very easy. You don't need to be an expert in coding and programming. Here a
 4. **Now click on Propose button.**
 5. **Create a new pull request.**
 6. **Wait for your Pull Request to be reviewed and merged!**
-7. **Enjoy and welcome to Hacktoberfest 2022 and Keep Contributing :)**
+7. **Enjoy and welcome to Hacktoberfest 2023 and Keep Contributing :)**
 
 > You Can Upload Coded Projects In the Codes Directory 
 
