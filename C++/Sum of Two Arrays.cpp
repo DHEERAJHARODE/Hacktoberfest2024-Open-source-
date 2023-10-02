@@ -1,3 +1,4 @@
+/*
 Question:-
 
 
@@ -56,6 +57,7 @@ Sample Output 2:
 1 0 2 2 0 
   
 Code:-
+*/
   
 #include <bits/stdc++.h>
 using namespace std;
