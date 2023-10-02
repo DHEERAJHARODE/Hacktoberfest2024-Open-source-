@@ -3,7 +3,7 @@ import itertools
 
 # Required data
 stock_name = input("Enter a stock symbol(like TSLA, IBM, MSFT, etc.): ")
-API_KEY = "USXV9AWMV1XWLDNC"
+API_KEY = "<your-api-key-here>"
 API_ENDPOINT = "https://www.alphavantage.co/query"
 API_FUNCTION = "TIME_SERIES_DAILY"
 
