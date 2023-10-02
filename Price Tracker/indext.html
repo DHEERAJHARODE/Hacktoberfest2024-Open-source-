@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="stylet.css">
+    <script src="maint.js"></script>
+
+   <!--=============== BOXICONS ===============-->
+   <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+
+    <link rel="icon" href="ghost.png">
+    <title>Price Tracker</title>
+</head>
+<body> 
+     
+     <!--==================== HEADER ====================-->
+     <header class="header">
+        <nav class="nav container">
+            <a href="#" class="nav__logo"> <img src="ghost.png" height="45" width="45" alt=""><h4>G0HAN - Projects</h4> </a>
+        </nav>
+    </header>
+
+    <section>
+        <div class="logos">
+          <a href="#"><i class='bx bx-bitcoin'></i></a>
+          <a href="#" class="logohead lg2"><h2>Price Indicator</h2></a>
+        </div>
+      
+      <div class="glass g1" style="--i:1">
+        <div class="inner">
+          <div class="liquid wbtc" id="btcliquid"></div>
+        </div>
+        <h3 class="name nm">BTC</h3>
+        <h3 class="name price btc" id="btc"></h3>
+      </div>
+      <div class="glass g2" style="--i:2">
+        <div class="inner">
+          <div class="liquid weth"  id="ethliquid"></div>
+        </div>
+        <h3 class="name nm">ETH</h3>
+        <h3 class="name price eth" id="eth"></h3>
+      </div>
+      <div class="glass g3" style="--i:3">
+        <div class="inner">
+          <div class="liquid wavax" id="avaxliquid"></div>
+        </div>
+        <h3 class="name nm">AVAX</h3>
+        <h3 class="name price avax" id="avax"></h3>
+      </div>
+      </section>
+      
+      
+
+</body>
+</html>
