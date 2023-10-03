@@ -1,0 +1,24 @@
+public static void main(String[] args) {
+
+    String str = "This is a string with spaces, characters and numbers 1234567890";
+
+    int countSpaces = 0;
+    int countCharacters = 0;
+    int countNumbers = 0;
+
+    for (int i = 0; i < str.length(); i++) {
+        char ch = str.charAt(i);
+
+        if (Character.isSpaceChar(ch)) {
+            countSpaces++;
+        } else if (Character.isAlphabetic(ch)) {
+            countCharacters++;
+        } else if (Character.isDigit(ch)) {
+            countNumbers++;
+        }
+    }
+
+    System.out.println("Count of spaces: " + countSpaces);
+    System.out.println("Count of characters: " + countCharacters);
+    System.out.println("Count of numbers: " + countNumbers);
+}
