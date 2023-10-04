@@ -1,0 +1,43 @@
+// Assuming you're working with a simple struct to represent processes
+// This gets all of your process data
+struct Process {
+    name: String,
+    arrival_time: u32,
+    burst_time: u32,
+}
+
+impl Process {
+    fn new(name: &str, arrival_time: u32, burst_time: u32) -> Process {
+        Process {
+            name: String::from(name),
+            arrival_time,
+            burst_time,
+        }
+    }
+}
+
+fn main() {
+    // Define the processes
+    let processes = vec![
+        Process::new("P1", 0, 5),
+        Process::new("P2", 1, 3),
+        Process::new("P3", 2, 8),
+        Process::new("P4", 3, 6),
+    ];
+
+    // Sort processes by arrival time
+    let mut sorted_processes = processes.clone();
+    sorted_processes.sort_by_key(|p| p.arrival_time);
+
+    let mut current_time = 0;
+
+    for process in sorted_processes {
+        if process.arrival_time > current_time {
+            current_time = process.arrival_time;
+        }
+
+        println!("Executing {} (arrives at {}, burst time {})", process.name, process.arrival_time, process.burst_time);
+
+        current_time += process.burst_time;
+    }
+}
