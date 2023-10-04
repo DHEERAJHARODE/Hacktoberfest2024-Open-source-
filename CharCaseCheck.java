@@ -12,17 +12,6 @@ public class CharCaseCheck {
 			System.out.println("uppercase");
 		}
 		
-		
-		//USE OF charAt(0)
-//		String word = "heelo";
-//		System.out.println(word.charAt(2));
-		//OUTPUT: e
-		
-		
-		//USE OF TRIM FUNCTION
-//		System.out.println(sc.next().trim());
-		//INPUT: hello guuyss hcbDHCbzdx  ||
-		//OUTPUT:hello
         
 		
 	}
