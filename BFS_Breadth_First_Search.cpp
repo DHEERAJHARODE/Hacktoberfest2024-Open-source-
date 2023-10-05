@@ -1,4 +1,3 @@
-//Made By: Vishesh Gupta
 #include<bits/stdc++.h>
 using namespace std;
 
