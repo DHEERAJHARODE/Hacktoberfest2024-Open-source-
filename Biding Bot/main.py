@@ -167,4 +167,4 @@ async def bal(ctx):
         await ctx.send(f"{ctx.message.author.mention} You don't have any balance")
 
 
-client.run('MTA5Mzc2Mzk1NTQzODE0NTU5Ng.G7XDhE.ctMEPHc4sHRnfHTRb-MOlNyoS9adHGlwEq4D4A')
+client.run('Your Token')
