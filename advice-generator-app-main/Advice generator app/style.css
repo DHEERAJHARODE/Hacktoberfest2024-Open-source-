@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@800&display=swap');
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+html{
+    font-size:62.5%;
+}
+:root{
+   --primary-lightCyan: hsl(193, 38%, 86%);
+   --primary-neonGreen:  hsl(150, 100%, 66%);
+   --neutral-grayishBlue:hsl(217, 19%, 38%);
+   --dark-grayishBlue: hsl(217, 19%, 24%);
+   --darkBlue: hsl(218, 23%, 16%);
+   --quote-fontWeight:800;
+   --fontFamily:'Manrope', sans-serif;
+
+}
+
+body{
+    height:100vh;
+    width:100%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-family:var(--fontFamily);
+    background:var(--darkBlue)
+}
+.box{
+   max-width:470px;
+   width:90%;
+   height:290px;
+   border-radius:15px;
+   display:flex;
+   flex-direction:column;
+   align-items:center;
+   position:relative;
+   background:var(--dark-grayishBlue)
+}
+h1{
+    font-size:2.5em;
+    width:90%;
+    text-align:center;
+    color:var(--primary-lightCyan);
+}
+img{
+    width:80%;
+position:absolute;
+top:75%;
+}
+h3{
+    text-transform:uppercase;
+    letter-spacing:3px;
+    margin:2em 0;
+    color:var(--primary-neonGreen);
+    font-weight:var(--quote-fontWeight);
+}
+.circle{
+    width:62px;
+    height:60px;
+    border-radius:50%;
+    background:var(--primary-neonGreen);
+    position:absolute;
+    top:89%;
+    transition:all 0.5s ease;
+}
+button{
+    height: 26px;
+    width: 27px;
+    border-radius:5px;
+    background:url(./images/icon-dice.svg);
+    background-position: center;
+    background-size: cover;
+    outline:none;
+    border:none;
+    position:absolute;
+    top:95%;
+    cursor:pointer;
+    z-index:9;
+    transition: transform 0.4s ease-in-out;
+    
+
+}
+button.rotate{
+    transform: rotate(360deg);
+}
+button:hover +.circle,
+.circle:hover{
+    box-shadow: 0 0 20px hsl(150, 100%, 66%), 0 0 40px hsl(150, 100%, 66%);
+}
+
+/* for small devices */
+ @media(max-width:500px){
+    html{
+        font-size:56.25%;
+     } 
+     .box{
+        height:300px;
+     }
+ }
