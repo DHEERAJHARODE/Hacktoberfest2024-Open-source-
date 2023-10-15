@@ -36,13 +36,9 @@ button[type="button"] {
 }
 button[type="button"]:hover {
     color: #04519d;
-    padding: 10px 25px;
     background: white;
     border: 1px solid #04519d;
-    border-radius: 20px;
-    outline: none;
     transform: scale(1.1);
-    cursor: pointer;
 }
 .content {
     color: #fbfcfd;
