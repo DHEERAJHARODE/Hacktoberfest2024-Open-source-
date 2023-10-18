@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&family=Yantramanav:wght@100;400&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppinss', sans-serif;
+}
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-image: linear-gradient(120deg, #a6c0fe 0%, #f68084 100%);
+}
+.wrapper{
+    width: 370px;
+    padding: 30px;
+    background: white;
+    border-radius: 15px;
+    box-shadow: 3px 3px 30px rgba(0, 0, 0, 0.44);
+}
+.wrapper header{
+    font-size: 28px;
+    text-align: center;
+    font-weight: 600;
+}
+.wrapper form{
+    padding: 20px;
+
+}
+.amount{
+    font-size: 22px;
+    padding: 5px;
+}
+.drop-list{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+    padding: 5px;
+    
+}
+.drop-list .from, .to{
+    font-size: 17px;
+}
+img{
+    width: 63px;
+    height: 50px;
+}
+button{
+    background-color: #3166b7;
+    color: white;
+    align-items: center;
+    width: 77px;
+    height: 35px;
+    font-size: 16px;
+    border-radius: 15px;
+    cursor: pointer;
+    box-shadow: 3px 3px 30px rgba(255, 255, 255, 0.816) ;
+    transition: all 0.6s linear 0.2s;
+}
+button:hover{
+    width: 80px;
+    height: 38px;
+    font-size: 20px;
+}
+.exchange-rate{
+    margin: 8px;
+    padding: 2px;
+    height: 25px;
+    border-radius: 8px;
+    font-size: 16px;
+}
+form input{
+    height: 35px;
+    font-size: 15px;
+    padding: 0 15px;
+    border: 2px solid rgba(22, 24, 26, 0.718);
+    border-radius: 8px;
+
+}
+form input:focus{
+    padding: 0 14px;
+    border: 2px solid rgba(0, 0, 0, 0.89);
+}
+form .drop-list{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.drop-list .select-box{
+    display: flex;
+    width: 115px;
+    height: 45px;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid rgba(25, 24, 24, 0.79);
+    border-radius: 8px;
+}
+.select-box select::-webkit-scrollbar{
+    width: 8px;
+}
+.select-box select::-webkit-scrollbar-track{
+    background-color: #fff;
+}
+.select-box select::-webkit-scrollbar-thumb{
+    background-color: #888;
+    border-radius: 8px;
+    border-right: 2px solid #fff;
+}
+.select-box select{
+    width: auto;
+    font-size: 16px;
+    margin: 0 -5px 0 5px;
+}
+.select-box img{
+    width: 25px;
+    height: 30px;
+}
+.drop-list .icons{
+    cursor: pointer;
+    font-size: 22px;
+    margin-top: 30px;
+}
+.btnbox{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
