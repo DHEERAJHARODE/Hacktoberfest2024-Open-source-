@@ -1,0 +1,62 @@
+#include <iostream>
+
+using namespace std;
+
+struct Node {
+    int data;
+    Node* next;
+};
+
+void selectionSort(Node* head) {
+    Node* current = head;
+    while (current != NULL) {
+        Node* index = current->next;
+        while (index != NULL) {
+            if (current->data > index->data) {
+                int temp = current->data;
+                current->data = index->data;
+                index->data = temp;
+            }
+            index = index->next;
+        }
+        current = current->next;
+    }
+}
+
+void printList(Node* head) {
+    Node* temp = head;
+    while (temp != NULL) {
+        cout << temp->data << " ";
+        temp = temp->next;
+    }
+    cout << endl;
+}
+
+int main() {
+    Node* head = new Node;
+    Node* second = new Node;
+    Node* third = new Node;
+    Node* fourth = new Node;
+
+    head->data = 4;
+    head->next = second;
+
+    second->data = 2;
+    second->next = third;
+
+    third->data = 1;
+    third->next = fourth;
+
+    fourth->data = 3;
+    fourth->next = NULL;
+
+    cout << "Original list: ";
+    printList(head);
+
+    selectionSort(head);
+
+    cout << "Sorted list: ";
+    printList(head);
+
+    return 0;
+}
