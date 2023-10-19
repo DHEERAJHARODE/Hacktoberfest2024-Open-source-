@@ -1,0 +1,91 @@
+* {
+    box-sizing: border-box!important;
+    outline: none;
+    margin: 0;
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+    display: none;
+}
+
+input[type="checkbox"]:checked+label,
+input[type="radio"]:checked+label {
+    color: #fff;
+    background-color: #212121;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+}
+
+.button:active,
+.button:focus,
+.button:hover {
+    background-color: #dadada;
+}
+
+.swal2-confirm:focus,
+.swal2-deny:focus,
+.swal2-cancel:focus,
+.swal2-input:focus {
+    box-shadow: 0 0 4px #0f5132 !important;
+}
+
+
+/* scrollbar */
+
+::-moz-scrollbar {
+    height: 6px;
+    width: 6px;
+    /* border-radius: 10px; */
+    background-color: #fff;
+}
+
+::-moz-scrollbar-track {
+    /* border-radius: 10px; */
+    background-color: #fff;
+}
+
+::-moz-scrollbar-thumb {
+    background-color: #0f5132;
+    /* border-radius: 10px; */
+}
+
+::-webkit-scrollbar {
+    background-color: #fff;
+    height: 6px;
+    width: 6px;
+    /* border-radius: 10px; */
+}
+
+::-webkit-scrollbar-track {
+    /* border-radius: 10px; */
+    background-color: #fff;
+}
+
+::-webkit-scrollbar-thumb {
+    /* border-radius: 10px; */
+    background-color: #0f5132;
+}
+
+.main {
+    overflow: auto;
+}
+
+i,
+p,
+a,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: none!important;
+}
+
+input[type="text"]:active,
+input[type="text"]:focus {
+    box-shadow: inset 0 0 4px #212121;
+}
