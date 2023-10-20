@@ -4,8 +4,6 @@ from difflib import get_close_matches
 #loading data from data.json file
 data = json.load(open("data.json"))
 
-# fucntion to find the word
-
 
 def translate(word):
     word = word.lower()
