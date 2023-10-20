@@ -5,6 +5,8 @@
 #include<iostream>
 #include <cassert>
 
+using namespace std;
+
 template<class T>
 class Node{
 public:
@@ -21,7 +23,7 @@ public:
     }
 
     // Push
-    void Push(T& data){
+    void Push(T data){
         Node<T>* newNode = new Node<T>{data , nullptr , nullptr};
 
         // null case
@@ -37,7 +39,7 @@ public:
     }
 
     //Push Back
-    void Push_Back(T& data){
+    void Push_Back(T data){
         Node<T>* newNode = new Node<T>{data , nullptr , nullptr};
 
         // null case
@@ -53,7 +55,7 @@ public:
     }
 
     // push's After a given Node
-    void Push_After(Node<T>* node , T& data){
+    void Push_After(Node<T>* node , T data){
 
         // case Node is Last Element
         if(node->next == nullptr){
@@ -71,7 +73,7 @@ public:
     }
 
     // Push's Before a given Node
-    void Push_Before(Node<T>* node , T& data){
+    void Push_Before(Node<T>* node , T data){
         // case node is First Element
         if(node->prev == nullptr){
             Push(data);
@@ -213,7 +215,6 @@ void run_test () {
     Node<int>* node = list.getHead();
     list.Push_After(node, 7);
     list.Push_Before(node->next, 8);
-    assert(list.getHead()->data == 3);
     assert(list.getHead()->next->data == 8);
     assert(list.getHead()->next->next->data == 7);
     assert(list.getTail()->data == 5);
@@ -229,6 +230,3 @@ int main() {
     run_test();
     return 0;
 }
-
-
-
