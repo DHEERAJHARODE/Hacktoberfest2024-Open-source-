@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bad+Script&display=swap');
+
+body {
+ transition: background 1s ease-in-out;
+ margin: 1px !important;
+ background-color: #333333 !important;
+}
+.centerContent {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  background-color: #00000081;
+  padding: 30px;
+  border-radius: 20px;
+  color: white;
+  width: 60%;
+  transition: .8s all;
+  cursor: pointer;
+}
+.centerContent:hover{
+  box-shadow: 0px 0px 20px 0px #333333;
+
+}
+.colorPicker{
+  width: 50px !important;
+  height: 50px;
+  margin: 10px 10px;
+}
+
+
+.centerContent h1{
+  font-size: 50px;
+  font-family: 'Righteous', cursive;
+}
+.btn:active,
+.btn:focus {
+  box-shadow: none;
+  outline: none;
+}
+.copy-link {
+  --height: 36px;
+
+  display: flex;
+  margin-top: 20px;
+
+}
+
+.copy-link-input {
+  flex-grow: 1;
+  padding: 0 18px;
+  font-size: 14px;
+  border: 1px solid #cccccc;
+  border-right: none;
+  outline: none;
+  border-top-left-radius: 50rem ;
+  border-bottom-left-radius: 50rem ;
+  background-color: rgba(255, 255, 255, 0);
+  color: white;
+  transition: .5s all;
+}
+
+.copy-link-input:hover {
+  background: #eeeeee;
+  color: #333333;
+}
+
+.copy-link-button {
+  flex-shrink: 0;
+  width: var(--height);
+  height: var(--height);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #dddddd;
+  color: #333333;
+  outline: none;
+  border: 1px solid #cccccc;
+  cursor: pointer;
+  border-top-right-radius: 50rem ;
+  border-bottom-right-radius: 50rem ;
+}
+
+.copy-link-button:hover {
+  background: #cccccc;
+}
+.credits{
+  position: absolute;
+  bottom: 0;
+  right: 45%;
+  font-family: 'Bad Script', cursive;
+}
+.credits {
+  animation: move 10s linear infinite;
+  
+}
+
+
+@keyframes move {
+  0% { transform: translateX(0); }
+  50% { transform: translateX(50%); }
+  100% { transform: translateX(0); }
+}
+.heartEmoji{
+  color: red;
+  font-size: 20px;
+}
+.manuallGen{
+  margin-top: 20px;
+}
+
+
+@media screen and (max-width:768px) {
+    .centerContent h1{
+        font-size: 30px;
+    }
+    .centerContent{
+        padding: 30px 10px;
+    }
+    .copy-link{
+        --height: 30px !important;
+    }
+    .copy-link-input{
+        font-size: 11px !important;
+    }
+    .credits{
+        right: 37% !important;
+    }
+    .btn{
+      font-size: 10px !important;
+      padding: 5px 10px !important;
+    }
+    .centerContent p{
+      display: none;
+    }
+    .colorPicker{
+      height: 30px;
+      width: 20px;
+    }
+    
+    
+}

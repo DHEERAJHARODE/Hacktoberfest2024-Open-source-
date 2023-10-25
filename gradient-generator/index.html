@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js"></script>
+    <title>Gradient Generator</title>
+
+    <!-- Bootstrap fontawesome icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/9525e0b59f.js" crossorigin="anonymous"></script>
+</head>
+<body id="body">
+    <div class="centerContent">
+        <h1>Random Gradient Generator</h1>
+        <p class="text-secondary mb-1">By clicking above button a random gradient will be generated for you</p>
+        <button class="btn btn-danger rounded-pill px-5 mt-2" onClick="genRandomHex()">AUTO GENERATE</button>
+        
+        <div class="copy-link">
+            <input type="text" class="copy-link-input" readonly />
+            <button type="button" class="copy-link-button">
+                <span class="fa fa-clipboard"></span>
+            </button>
+        </div>
+        
+        <div class="manuallGen">
+          <p class="text-secondary mb-1">Generate gradient by giving two color values</p>
+          <input class="colorPicker" value="#18d26d" type="color" id="color1" name="color1">
+          <input class="colorPicker" value="#22a7f2" type="color" id="color2" name="color2"><br>
+          <button class="btn btn-primary rounded-pill px-5 mt-2" onClick="genCustomHex()">Manually Generate</button>
+        </div>
+
+
+      </div>
+      <p class='credits'>Made By <b>Yasir Nawaz</b> with <span class='fa fa-heart heartEmoji'></span></p>
+
+      <script>
+        const hexNum = [
+    '1',
+    '2',
+    '3',
+    '4',
+    '5',
+    '6',
+    '7',
+    '8',
+    '9',
+    'a',
+    'b',
+    'c',
+    'd',
+    'e',
+    'f'
+  ];
+  
+  function genRandomHex() {
+      let hex1 = '';
+      let hex2 = '';
+    
+      for (let i = 0; i < 6; i++) {
+        hex1 += hexNum[Math.floor(Math.random() * hexNum.length)];
+        hex2 += hexNum[Math.floor(Math.random() * hexNum.length)];
+      }
+    
+      const gradient = `linear-gradient(45deg, #${hex1}, #${hex2})`;
+    
+      document.getElementById('body').style.background = gradient;
+      document.getElementById('body').classList.add('bg-transition');
+      document.querySelector(".copy-link-input").value = `background: ${gradient}`;
+    }
+    
+    
+  document.querySelectorAll(".copy-link").forEach((copyLinkParent) => {
+      const inputField = copyLinkParent.querySelector(".copy-link-input");
+      const copyButton = copyLinkParent.querySelector(".copy-link-button");
+      const text = inputField.value;
+    
+      inputField.addEventListener("focus", () => inputField.select());
+    
+      copyButton.addEventListener("click", () => {
+    inputField.select();
+    navigator.clipboard.writeText(inputField.value);
+    inputField.value = "Copied!";
+    setTimeout(() => {
+        inputField.value = `background: ${gradient}`;
+    }, 2000);
+});
+
+        
+        
+    });
+
+
+    function genCustomHex() {
+    const hex1 = document.getElementById('color1').value.substring(1);
+    const hex2 = document.getElementById('color2').value.substring(1);
+  
+    const gradient = `linear-gradient(45deg, #${hex1}, #${hex2})`;
+  
+    document.getElementById('body').style.background = gradient;
+    document.getElementById('body').classList.add('bg-transition');
+    document.querySelector(".copy-link-input").value = `background: ${gradient}`;
+}
+
+      </script>
+
+</body>
+</html>
