@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Todo List App</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <h1>Todo List</h1>
+  <div class="input-container">
+    <input type="text" id="task" placeholder="Add a new task...">
+    <button onclick="addTask()">Add</button>
+  </div>
+  <div class="lists">
+    <div class="pending-list">
+      <h2>Pending Tasks</h2>
+      <ul id="pending-tasks">
+      </ul>
+    </div>
+    <div class="completed-list">
+      <h2>Completed Tasks</h2>
+      <ul id="completed-tasks">
+      </ul>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+
+</html>
