@@ -1,0 +1,38 @@
+element.style{}
+.textanim[_ngcontent-tla-c72] {
+    color: #fff;
+    font-family: Raleway-Bold;
+    padding: 0vh 3.2vw;
+    display: flex;
+    flex-direction: column;
+    font-size: .8vw;
+    text-align: center;
+    justify-content: center;
+    width: 3.4vw;
+    height: -webkit-fill-available;
+    left: 3.5vw;
+    top: 0.75vh;
+    animation: thisanimtext .5s forwards ease-in-out;
+}
+
+.toggle[_ngcontent-tla-c72] {
+    position: absolute;
+    top: 15vh;
+    left: 44.5vw;
+    height: 4.4vh;
+    /* border: 2px solid #00FFD1; */
+    border-radius: 4.2vh;
+    z-index: 100;
+    cursor: pointer;
+}
+
+.toggle[_ngcontent-tla-c72] {
+    position: absolute;
+    top: 11.5vh;
+    left: 44.5vw;
+    height: 4.4vh;
+    border: 2px solid #00FFD1;
+    border-radius: 4.2vh;
+    z-index: 100;
+    cursor: pointer;
+}
