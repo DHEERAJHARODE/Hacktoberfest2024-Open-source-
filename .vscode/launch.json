@@ -1,0 +1,13 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "C/C++ Runner: Debug Session",
+      "type": "lldb",
+      "request": "launch",
+      "args": [],
+      "cwd": "/Users/rounaksarkar/Desktop/Github repo/Hacktoberfest2023-Open-source-",
+      "program": "/Users/rounaksarkar/Desktop/Github repo/Hacktoberfest2023-Open-source-/build/Debug/outDebug"
+    }
+  ]
+}
