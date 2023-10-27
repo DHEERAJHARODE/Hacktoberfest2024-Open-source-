@@ -1,14 +1,8 @@
-# Software Developed by Shaksham Sinha
-# Date : 30th August 2019
-# Description : A basic console based Dictionary app
-
 import json
 from difflib import get_close_matches
 
 #loading data from data.json file
 data = json.load(open("data.json"))
-
-# fucntion to find the word
 
 
 def translate(word):
