@@ -1,0 +1,68 @@
+import java.util.Scanner;
+
+public class TurtleTowardsRiverGame {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Welcome to the Turtle Towards River Game!");
+        System.out.println("Help the turtle reach the river safely.");
+        System.out.println("Enter 'L' to move left, 'R' to move right, 'U' to move up, and 'D' to move down.");
+
+        int turtleX = 0; // Initial position of the turtle (x-coordinate)
+        int turtleY = 0; // Initial position of the turtle (y-coordinate)
+        int riverY = 10; // Y-coordinate of the river
+
+        while (true) {
+            // Display the game board
+            for (int y = 0; y <= 10; y++) {
+                for (int x = 0; x <= 20; x++) {
+                    if (x == turtleX && y == turtleY) {
+                        System.out.print("T");
+                    } else if (x == 10 && y == riverY) {
+                        System.out.print("R");
+                    } else {
+                        System.out.print(".");
+                    }
+                }
+                System.out.println();
+            }
+
+            // Check if the turtle has reached the river
+            if (turtleY == riverY) {
+                System.out.println("Congratulations! The turtle reached the river.");
+                break;
+            }
+
+            // Get the user's move
+            System.out.print("Enter your move: ");
+            String move = scanner.nextLine().toUpperCase();
+
+            // Update the turtle's position based on the user's move
+            switch (move) {
+                case "L":
+                    if (turtleX > 0) {
+                        turtleX--;
+                    }
+                    break;
+                case "R":
+                    if (turtleX < 20) {
+                        turtleX++;
+                    }
+                    break;
+                case "U":
+                    if (turtleY > 0) {
+                        turtleY--;
+                    }
+                    break;
+                case "D":
+                    if (turtleY < 10) {
+                        turtleY++;
+                    }
+                    break;
+                default:
+                    System.out.println("Invalid move. Use 'L', 'R', 'U', or 'D'.");
+            }
+        }
+
+        scanner.close();
+    }
+}
