@@ -10,8 +10,10 @@
 void optionTray();
 void secondOptionTray();
 
+//Addition Function
 void addition()
-{printf("\nEnter nos. to add separated by space_ || press Enter ┘ for solution \n\n");
+{
+    printf("\nEnter nos. to add separated by space_ || press Enter ┘ for solution \n\n");
     int input=0; int ans=0; char c='\0';
     while(c!='\n'){
         scanf("%d", &input);
@@ -23,6 +25,7 @@ void addition()
     secondOptionTray();
 }
 
+//Subtraction Function
 void subtraction ()
 {
   int first, second; int ans = 0;
@@ -35,7 +38,7 @@ void subtraction ()
   secondOptionTray();
 }
 
-
+//Multiplication Function
 void multiplication ()
 {
     printf("\nEnter nos. to multiply separated by space_ || press Enter ┘ for solution \n\n");
@@ -50,9 +53,10 @@ void multiplication ()
     secondOptionTray();
 }
 
+//Division Function
 void division ()
 {
-  int dend, isor=0;char c='\0';
+  int dend, isor=0; char c='\0';
   printf ("\nEnter the Dividend: ");
   scanf ("%d", &dend);
   printf ("Enter the Divisor: ");
@@ -64,7 +68,7 @@ void division ()
   secondOptionTray();
 }
 
-
+//Power Function
 void power ()
 {
   double base, exponent, ans;
@@ -79,7 +83,8 @@ void power ()
   secondOptionTray();
 }
 
-void sqroot()
+//Square Root Function
+void square_oot()
 {
     
     double input;
@@ -91,7 +96,8 @@ void sqroot()
     
 }
 
-void cbroot(){
+//Cube Root Function
+void cube_root(){
         double input;
     printf("\nEnter no. for Cube Root: ");
     scanf("%lf", &input);
@@ -99,7 +105,7 @@ void cbroot(){
         secondOptionTray();
 }
 
-
+//Factorial Function
 void factorial ()
 {
   int input, fact = 1;
@@ -122,8 +128,6 @@ void factorial ()
 
 
 
-
-
 //**************************************
 
 int main ()
@@ -136,65 +140,45 @@ int main ()
 
   while (1>0)
     {
-      
-      
-
       choice= getchar();
-
       switch (choice)
 	{
 	    case '1':
 	    case '+':
 	    addition ();break;
-
-	case '-':
-	case '2':
-	subtraction ();
-	break;
-
-	case '*':
-	case '3':
-	  multiplication ();
-	  break;
-
-	case '/':
-	case '4':
-	  division ();
-	  break;
-
-	case '^':
-	case '5':
-	    power();
-	    break;
-
-	case '|':
-	case '6':
-	  sqroot();
-	  break;
-	  
-	case '~':
-	case '7':
-	  cbroot();
-	  break;
-
-	case '!':
-	case '8':
-	  factorial();
-	  break;
-
-	case 'M':
-	case 'm':
-	optionTray();break;
-	
-	case 's':
-	case 'S':
-	exit(0);break;
-
+		case '-':
+		case '2':
+		subtraction ();break;
+		case '*':
+		case '3':
+	  	multiplication ();break;
+		case '/':
+		case '4':
+	  	division ();break;
+		case '^':
+		case '5':
+	    power();break;
+		case '|':
+		case '6':
+	  	square_root();break;
+		case '~':
+		case '7':
+	  	cube_root();break;
+		case '!':
+		case '8':
+	  	factorial();break;
+		case 'M':
+		case 'm':
+		optionTray();break;
+		case 's':
+		case 'S':
+		exit(0);break;
 	}
 	
     }
 }
-
+//**********************
+//Options
 void secondOptionTray()
 {
   
@@ -207,10 +191,7 @@ void secondOptionTray()
 
 void optionTray()
 {
-
-  
   secondOptionTray();
-
   printf ("\n\n\nEnter '+' or '1' for Addition");
   printf ("\t\t\t\tEnter '-' or '2; for Subtraction");
   printf ("\nEnter '*' or '3' for Multiplication");
