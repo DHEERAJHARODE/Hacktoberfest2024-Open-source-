@@ -20,44 +20,20 @@ Example 3:
 Input: nums = [3,3], target = 6
 Output: [0,1]
 
-Solution : 
+Solution:    
+vector<int> twoSum(vector<int>& nums, int target) 
+{
+        //created a map to store numbers with their indices
+        unordered_map<int, int> mp;
 
-class Solution {
-public:
-    vector<int> twoSum(vector<int>& nums, int target) {
-        unordered_map<int, int>res ; 
-        vector<int> result;
-        
-        for(int i=0;i<nums.size();i++){
-            if(res.find(target-nums[i])!=res.end())
-            {
-                result.push_back(i);
-                result.push_back(res[target-nums[i]]);
-                break;
-            }
+        for(int i = 0; i < nums.size(); i++){
+            if(mp.find(target - nums[i]) == mp.end())
+                mp[nums[i]] = i;
             else
-                res[nums[i]]=i;
+                return {mp[target - nums[i]], i};
         }
-        return result;
-    }
-};
+       //returning {-1,-1} if not found
+        return {-1, -1};
+} 
 
-Time Complexity : O(n)
-
- 
-class Solution {
-public:
-    vector<int> twoSum(vector<int>& nums, int target) {
-        unordered_map<int,int>m;
-        for(int i=0;i<nums.size();i++)
-        {
-            int diff = target-nums[i];
-            if(m.count(diff))
-                return {m[diff],i};
-            else
-                m[nums[i]]=i;
-        }
-        return {-1,-1};
-        
-    }
-};
+Time complexity: O(n)
