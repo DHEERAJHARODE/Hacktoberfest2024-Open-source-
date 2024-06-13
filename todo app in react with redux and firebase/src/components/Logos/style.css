@@ -1,0 +1,8 @@
+.logo-border{
+    border-color: #d2d4d4;
+    border-radius: 50%;
+    border-style: solid;
+    border-width: 1px;
+    padding: 7px;
+    margin: auto 10px
+}
