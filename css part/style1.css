@@ -189,7 +189,10 @@ i.fa-bars {
     animation-delay: 7s;
     width: 100px;
 }
-
+.bubbles img:nth-child(8){
+    animation-delay: 7s;
+    width: 100px;
+}
 
 
 @media screen and (max-width: 600px)
