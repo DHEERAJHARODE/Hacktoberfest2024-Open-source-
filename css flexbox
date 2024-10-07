@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cute CSS Box Model Example</title>
+    
+    <style>
+        body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #ffe4e1; /* Light pink background */
+    font-family: 'Arial', sans-serif;
+}
+
+.cute-box {
+    width: 300px;                 
+    padding: 20px;               
+    border: 5px solid #ff69b4;   
+    margin: 20px;                
+    background-color: #ff8dd1;    
+    border-radius: 15px;         
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); 
+    text-align: center;          
+    transition: transform 0.3s;  
+}
+
+.cute-box:hover {
+    transform: scale(1.05);      
+}
+
+    </style>
+</head>
+<body>
+    <div class="cute-box">
+        <h2>Hello, World!</h2>
+        <p>This is a small contribution to the hacktober fest.</p>
+    </div>
+</body>
+</html>
