@@ -1,0 +1,1 @@
+model = load_model('models/gender_detection.model')

@@ -1,0 +1,7 @@
+cudatoolkit               11.2.2
+cudnn                     8.1.0.77
+tensorflow                2.10.1
+opencv-python             4.5.3.56
+python                    3.9.19
+keras                     2.10.0
+numpy                     1.26.4
