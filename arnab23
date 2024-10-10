@@ -1,0 +1,63 @@
+#include <stdio.h>
+#define SIZE 5
+
+int queue[SIZE], front = -1, rear = -1;
+/*void enQueue(int value);
+void deQueue();
+void display();*/
+int main(){
+
+    deQueue(); 
+	enQueue(1);
+	enQueue(4);
+	enQueue(7);
+	enQueue(9);
+	enQueue(13);
+	//inserted 5 elements
+	
+	enQueue(16);
+	display();
+	
+	deQueue();
+	
+	display(); 
+	return 0;
+}
+
+void enQueue(int value){
+    if(rear == SIZE - 1)
+    {
+        printf("\nQueue is full!");
+    }
+    else{
+        if(front == -1){
+            front = 0;
+        }
+        rear++;
+        queue[rear] = value;
+        printf("\nInserted element is: %d", value);
+    }
+}
+void deQueue(){
+    if(front == -1){
+        printf("\nQueue is empty!");
+    }else{
+        printf("\nDeleted element is: %d", queue[front]);
+        front++;
+        if(front > rear){
+            front = rear = -1;
+        }
+    }
+}
+void display(){
+    if(rear == -1){
+        printf("\nQueue is empty!");
+    }else{
+        int i;
+        printf("\nThe elements are: ");
+        for(i = front; i <= rear; i++)
+            printf("%d ", queue[i]);
+    }
+    printf("\n");
+}
+
