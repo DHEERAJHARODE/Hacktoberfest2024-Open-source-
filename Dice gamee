@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+      .container{
+    margin: auto;
+    text-align: center;
+    width: 70%;
+}
+body{
+    background-color: #393E46;
+}
+h1{
+    font-family: cursive;
+    font-size: 500%;
+    margin-top: 20px;
+    color: aquamarine;
+    text-shadow: 5px 5px 5px black;
+}
+.dice{
+    text-align: center;
+    display: inline-block;
+}
+img{
+    width:80%;
+}
+p{
+    font-family: fantasy;
+    color: aquamarine;
+    font-size: x-large;
+}
+footer{
+    text-align: center;
+    font-size: 150%;
+    color: white;
+    margin-top: 30px;
+}
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dice Game</title>
+</head>
+<body>
+     <div class="container">
+        <h1>Refresh me !</h1>
+        <div class="dice">
+            <p>Player 1</p>
+            <img class="img-1" src="images/dice6.png">
+        </div>
+        <div class="dice">
+            <p>Player 2</p>
+            <img class="img-2" src="images/dice6.png">
+        </div>
+     </div>
+</body>
+<script>
+  var randomNumber1=Math.floor(Math.random()*6)+1 ;
+// console.log(randomNumber1);
+var randomdiceImage1="images/" + "dice" + randomNumber1 + ".png";
+// var randomImagesource="images/"+randomdiceImage;
+var image1=document.getElementsByTagName("img")[0];
+image1.setAttribute("src",randomdiceImage1);
+
+var randomNumber2=Math.floor(Math.random()*6)+1;
+
+var randomdiceImage2="images/" + "dice" + randomNumber2 + ".png";
+
+var image2=document.getElementsByTagName("img")[1];
+image2.setAttribute("src", randomdiceImage2);
+
+if(randomNumber1>randomNumber2){
+    document.querySelector("h1").textContent="Player 1 wins";
+}
+
+else if(randomNumber1<randomNumber2){
+    document.querySelector("h1").textContent="Player 2 wins";
+}
+else{
+    document.querySelector("h1").textContent="Draw !";   
+}
+</script>
+<footer>
+    www 🎲 App Brewery 🎲 com
+</footer>
+</html>
