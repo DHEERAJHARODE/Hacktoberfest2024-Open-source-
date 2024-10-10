@@ -1,7 +1,7 @@
 # Hactoberfest 2023
-<img src=https://hacktoberfest.digitalocean.com/_nuxt/img/logo-hacktoberfest-full.f42e3b1.svg />
+<img src="https://hacktoberfest.com/_next/static/media/logo-hacktoberfest--horizontal.ebc5fdc8.svg" alt="Hacktober Fest Logo"/>
 A beginner-friendly project to help you in open-source contribution. Made specifically for contribution in HACKTOBERFEST 2023! Hello World Programs and Algorithms! Please leave a star to support this project! 
-![](https://hacktoberfest.digitalocean.com/_nuxt/img/logo-hacktoberfest-full.f42e3b1.svg)
+
 
 # This All programs For beginner 
 Enjoy All
