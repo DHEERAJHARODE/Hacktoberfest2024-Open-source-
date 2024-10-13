@@ -1,0 +1,80 @@
+/* General styling */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    text-align: center;
+    margin-top: 20px;
+}
+
+h1 {
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.controls {
+    margin-top: 15px;
+}
+
+button {
+    padding: 10px 20px;
+    margin: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Grid styling */
+#grid {
+    display: grid;
+    grid-template-columns: repeat(20, 25px);
+    grid-gap: 2px;
+    margin: 20px auto;
+}
+
+#grid div {
+    width: 25px;
+    height: 25px;
+    background-color: #ddd;
+    transition: background-color 0.3s;
+    border-radius: 3px;
+}
+
+#grid div.start {
+    background-color: green;
+}
+
+#grid div.end {
+    background-color: red;
+}
+
+#grid div.wall {
+    background-color: black;
+}
+
+#grid div.open {
+    background-color: lightblue;
+}
+
+#grid div.closed {
+    background-color: #0000ff;
+}
+
+#grid div.path {
+    background-color: yellow;
+}
