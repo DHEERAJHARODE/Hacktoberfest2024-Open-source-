@@ -1,73 +1,90 @@
-# Hactoberfest 2023
-<img src=https://hacktoberfest.digitalocean.com/_nuxt/img/logo-hacktoberfest-full.f42e3b1.svg />
-A beginner-friendly project to help you in open-source contribution. Made specifically for contribution in HACKTOBERFEST 2023! Hello World Programs and Algorithms! Please leave a star to support this project! 
-![](https://hacktoberfest.digitalocean.com/_nuxt/img/logo-hacktoberfest-full.f42e3b1.svg)
+## HACkTOBERFEST 2024!!
+<img src=https://hacktoberfest.digitalocean.com/_nuxt/img/logo-hacktoberfest-full.f42e3b1.svg alt="error"/> 
+Welcome to Hacktoberfest 2024, a beginner-friendly open-source project to help you make your first contribution! Whether you’re new to programming or experienced, this repository provides simple programs and algorithms to get you started on your open-source journey.
 
-# This All programs For beginner 
-Enjoy All
-Hacktoberfest has a simple and plain moto.
+⭐ Please leave a star to support this project! ⭐
 
-# Beginner-Hacktoberfest
-Need Your first pr for hacktoberfest 2k23 ? come on in 
+❓ What is Hacktoberfest 2024?
 
----
+Hacktoberfest is an annual event encouraging people worldwide to contribute to open source. It’s organized by DigitalOcean and DEV and takes place every October.
 
-# ❓ What's Hacktoberfest 2023?
+From October 1 to October 31, 2024, your goal is to contribute to any open-source projects and submit at least four pull requests. Contributions can range from bug fixes, feature improvements, or even documentation enhancements. This is a fantastic opportunity to:
 
-Hacktoberfest is the easiest way to get into open source! Hacktoberfest is a month long festival of open source code presented by [Digital Ocean](https://www.digitalocean.com/) and [DEV](https://www.dev.to/) this year in 2023.
+	•	Support open-source projects
+	•	Gain experience in collaboration and coding
+	•	Win a limited edition Hacktoberfest T-shirt and stickers!
 
-During the entire month of October 2022, all you have to do is contribute to any open source projects and open at least 4 pull requests. Yes, any project and any kind of contributions. It can be a be a bug fix, improvement, or even a documentation change! And win a T-Shirt and awesome stickers.
+Whether you’re new to open source or have some experience, Hacktoberfest is the perfect way to get involved. There are plenty of tasks for all skill levels!
 
-If you’ve never contributed to open source before, this is the perfect time to get started because Hacktoberfest provides a large list of available contribution opportunities (and yes, there are always plenty for beginners too).
+👕 Why Should You Participate?
 
----
+By contributing to Hacktoberfest, you’ll:
 
-# 👕 Why Should I Contribute?
+	•	Support the open-source community: Your contributions help projects grow and evolve.
+	•	Earn awesome rewards: Complete 4 valid pull requests and get an exclusive Hacktoberfest T-shirt and cool stickers.
+	•	Gain experience: Learn how open source works, improve your coding skills, and collaborate with other developers globally.
+	•	Join a global community: You’ll connect with thousands of developers and organizations passionate about open source.
 
-Hacktoberfest has a simple and plain moto.
+	Hacktoberfest’s motto is simple: “Support open source and earn a limited-edition T-shirt!”
 
-> Support open source and earn a limited edition T-shirt!
+👍 How Can You Contribute?
 
-So, yes! You can win a T-Shirt and few awesome stickers to attach on your laptop. On plus side, you will get into beautiful world of open source and get the international exposure.  
-**Wait there's more!**
+Getting started is easy, and you don’t need to be an expert! Follow these simple steps to make your first pull request:
 
+Step-by-Step Contribution Guide
 
----
+-   1.	Star this repository: Show your support by starring the repo!
+-	2.	Fork this repository: Create a copy of this repo to your GitHub account.
+-	3.	Clone your fork locally: Bring the forked repo to your machine.
+-   4.	Make changes locally: Edit the code to contribute. You can add new programs or make improvements to existing ones.
+-   5.	Create a new branch: Work on your changes in a separate branch.
 
-# 👍 This is Awesome! How Can I Contribute?
-
-It's very easy. You don't need to be an expert in coding and programming. Here are the steps you need to follow to create your -(maybe)- EXAMPLE first pull request within few minutes.
-1. **Star this repository.**
-2. **Navigate To index.html or main.css do so crazy contribution file**
-3. **Edit the file and insert the line of text in the specified location in the format as given in comment .**
-4. **Now click on Propose button.**
-5. **Create a new pull request.**
-6. **Wait for your Pull Request to be reviewed and merged!**
-7. **Enjoy and welcome to Hacktoberfest 2023 and Keep Contributing :)**
-
-> You Can Upload Coded Projects In the Codes Directory 
+-   6. Commit your changes with a meaningful commit message
+-   7. Push your changes to your fork
+-   8. Open a pull request
+-   9. Wait for a review
+-   10. Once your PR is merged, then you have made your first Hacktoberfest contribution!
 
 
----
-## Code Of Conduct
-**Examples of behavior that contributes to creating a positive environment :**
-- Using welcoming and inclusive language
-- Gracefully accepting constructive criticism
-- Focusing on what is best for the community
-- Being respectful of differing viewpoints and experiences
+Tip: You can contribute by fixing bugs, writing new code, or improving documentation!
 
+📁 Project Structure
 
+	•	Codes Directory: You can upload code files for different programming languages.
+	•	index.html/main.css: These files are great starting points to contribute by making UI/UX improvements.
 
-**Examples of unacceptable behavior by participants include:**
-- Trolling, insulting/derogatory comments, and personal or political attacks
-- Public or private harassment
-- Publishing others' private information, such as a physical or electronic address, without explicit permission
----
+🤝 Code of Conduct
 
-## 🎯Objectives
-**The Main Objectives of this Repositry is to help People for their Contribution in Hacktoberfest 2022**
+We are committed to providing a friendly, welcoming, and inclusive environment for all. Please follow these guidelines:
 
-<!-- # :handshake: Our Contributors
-<a href="https://github.com/hctnm2/Beginner-Hacktoberfest/graphs/contributors">
-<!--   <img src="https://contrib.rocks/image?repo=hctnm2/Beginner-Hacktoberfest" /> -->
-<!-- </a> --> 
+Examples of Positive Behavior:
+
+	•	Using inclusive and welcoming language
+	•	Being respectful of differing viewpoints and experiences
+	•	Offering constructive criticism
+	•	Contributing to the community’s growth
+
+Unacceptable Behavior Includes:
+
+	•	Trolling, insults, or derogatory comments
+	•	Harassment of any kind
+	•	Sharing personal or private information without consent
+
+Let’s work together to make this community safe and supportive for everyone.
+
+🎯 Objectives
+
+This repository is designed to help beginners contribute to open-source during Hacktoberfest 2024. We provide basic programs, algorithms, and beginner-friendly issues to help you get started.
+
+📝 License
+
+This repository is licensed under the MIT License. Feel free to use the code and contribute!
+
+🚀 Ready to Contribute?
+
+	1.	Star this repository ✨
+	2.	Fork and clone the repository 📂
+	3.	Make your contributions 💻
+	4.	Submit your pull requests 🔗
+
+Welcome to Hacktoberfest 2024! Let’s code and contribute together! 🎉
