@@ -50,8 +50,7 @@ class KDtree {
 		return true;
 	}
 
-	public boolean searchRec(Node root, int[] point,
-							int depth)
+	public boolean searchRec(Node root, int[] point, int depth)
 	{
 		if (root == null) {
 			return false;
@@ -78,8 +77,7 @@ class KDtree {
 
 		Node root = null;
 		int[][] points
-			= { { 3, 6 }, { 17, 15 }, { 13, 15 }, { 6, 12 },
-				{ 9, 1 }, { 2, 7 }, { 10, 19 } };
+			= { { 3, 6 }, { 17, 15 }, { 13, 15 }, { 6, 12 },{ 9, 1 }, { 2, 7 }, { 10, 19 } };
 
 		int n = points.length;
 
@@ -88,13 +86,9 @@ class KDtree {
 		}
 
 		int[] point1 = { 10, 19 };
-		System.out.println(kdTree.search(root, point1)
-							? "Found"
-							: "Not Found");
+		System.out.println(kdTree.search(root, point1)? "Found": "Not Found");
 
 		int[] point2 = { 12, 19 };
-		System.out.println(kdTree.search(root, point2)
-							? "Found"
-							: "Not Found");
+		System.out.println(kdTree.search(root, point2)? "Found": "Not Found");
 	}
 }
